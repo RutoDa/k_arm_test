@@ -1,29 +1,25 @@
-# This is a sample Python script.
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
-
 import torch
 import numpy as np
 import random
 import time
+import os
+from k_arm.utils import *
+from k_arm.prescreening import pre_screening
 
 SEED = 666
-
-
-def setup_seed(seed):
-    """
-    設置所有module的cpu或gpu的seed，使之後可以再次實現實驗結果
-    :param seed: 隨機種子
-    :return:
-    """
-    torch.manual_seed(seed)
-    torch.cuda.manual_seed_all(seed)
-    np.random.seed(seed)
-    random.seed(seed)
-    torch.backends.cudnn.deterministic = True
-
-
+FILE_ROOT_PATH = 'D:\\UULi\\Datasets\\TrojAi\\Round1\\TrainData\\models\\unzip\\id-00000102'
+MODEL_PATH = os.path.join(FILE_ROOT_PATH, 'model.pt')
+DATA_PATH = os.path.join(FILE_ROOT_PATH, 'clean-example-data')
 
 if __name__ == '__main__':
+    StartTime = time.time()
     setup_seed(SEED)
+    model = load_model(MODEL_PATH)
+    print(f"{'-'*20}Pre-Screening開始{'-'*20}")
+    # pre_screening會回傳過濾後可疑的target classes與victim classes
+    FilteredTargetClasses, FilteredVictimClasses = pre_screening(model, DATA_PATH)
+    print(FilteredTargetClasses, FilteredVictimClasses)
+
+
+    TimeCost = time.time() - StartTime
+    print(f"{TimeCost}")
