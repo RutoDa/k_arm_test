@@ -124,6 +124,6 @@ def pre_screening(model, data_path):
                         # triggered_classes = triggered_classes[np.intersect1d(torch.topk(triggered_class_pr,3,dim=0)[1], torch.topk(triggered_class_median,3,dim=0)[1])] #也考慮中位數，之後跑跑看
                     target_classes.append(target_class)
                     triggered_classes.append(triggered_class)
-        return triggered_classes, triggered_classes
+        return target_classes, triggered_classes
     else:
         return target_label, None
