@@ -13,61 +13,40 @@ MODEL_PATH = os.path.join(FILE_ROOT_PATH, 'model.pt')
 DATA_PATH = os.path.join(FILE_ROOT_PATH, 'clean-example-data')
 
 
-def f(filtered_target_classes, filtered_victim_classes):
-    try:
-        if filtered_victim_classes is None:
-            if filtered_target_classes is None:
-                # 模型安全的(無target label，也無victim label)
-                # target_classes = FilteredTargetClasses
-                # victim_classes = FilteredVictimClasses
-                number_of_classes = 0
-                backdoor_type = None
-                return filtered_target_classes, filtered_victim_classes, number_of_classes, backdoor_type
-            else:
-                # universal backdoor(因為pre-screening的輸出假如只有target label)
-                number_of_classes = 1
-                backdoor_type = 'universal'
-                return filtered_target_classes, filtered_victim_classes, number_of_classes, backdoor_type
-        else:
-            # label specific backdoor
-            target_classes, victim_classes = classes_matching(filtered_target_classes, filtered_victim_classes)
-            num_classes = len(victim_classes)
-            trigger_type = 'polygon_specific'
-
-            print(f'Trigger Type: {trigger_type}')
-            Candidates = []
-            for i in range(len(target_classes)):
-                Candidates.append('{}-{}'.format(target_classes[i], victim_classes[i]))
-            print(f'Target-Victim Pair Candidates: {Candidates}')
-    except Exception as e:
-        print(f"ERROR1: {e}")
-
-
-def target_victim_combination(target_classes, victim_classes):
-    temp_target_classes = []
-    temp_victim_classes = []
-
-    for i in range(len(victim_classes)):
-        target_classes_i = target_classes[i]
-        victim_classes_i = victim_classes[i]
-        for j in range(len(victim_classes_i)):
-            temp_target_classes.append(target_classes_i)
-            temp_victim_classes.append(victim_classes_i[j])
-
-    return temp_target_classes, temp_victim_classes
-
-
 if __name__ == '__main__':
+    print(f"{'-' * 40}掃描檔案: {FILE_ROOT_PATH}{'-' * 40}")
+
     StartTime = time.time()
     setup_seed(SEED)
     model = load_model(MODEL_PATH)
-    print(f"{'-' * 20}Pre-Screening開始{'-' * 20}")
+
+    print(f"{'*' * 20}Pre-Screening開始{'*' * 20}")
+
     # pre_screening會回傳過濾後可疑的target classes與victim classes
     FilteredTargetClasses, FilteredVictimClasses = pre_screening(model, DATA_PATH)
 
+    print(f"FilteredTargetClasses: {FilteredTargetClasses}")
+    print(f"FilteredVictimClasses: {FilteredVictimClasses}")
+    print(f"{'*' * 20}Pre-Screening結束{'*' * 20}")
+
+    target_classes, victim_classes, number_of_classes, backdoor_type = pre_process(
+        FilteredTargetClasses, FilteredVictimClasses)
+    if backdoor_type is None:
+        print('Model是安全的(Benign)')
+    elif backdoor_type == "universal":
+        print(f'可能的攻擊方式: Universal Backdoor Attack')
+        print(f'可能的 target class: {target_classes}')
+        print(f'可能的 victim classes: ALL')
+    else:
+        print(f'可能的攻擊方式: Label Specific Backdoor Attack')
+        candidates = []
+        for i in range(number_of_classes):
+            candidates.append(f'{target_classes[i]}-{victim_classes[i]}')
+        print(f'可能的 target-victim 配對: {candidates}')
 
     TimeCost = time.time() - StartTime
-    print(f"{TimeCost}")
+    print(f"{'*' * 20}檢測結束{'*' * 20}")
+    print(f"整體耗時: {TimeCost}")
 
 # if __name__ == '__main__':
 #     StartTime = time.time()
