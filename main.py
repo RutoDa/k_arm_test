@@ -1,3 +1,8 @@
+"""
+本專案基於作者的檢測方法進行修改，參見
+Shen et al., "Backdoor Scanning for Deep Neural Networks through K-Arm Optimization" (2021)
+"""
+
 import torch
 import numpy as np
 import random
@@ -6,12 +11,33 @@ import os
 from k_arm.utils import *
 from k_arm.prescreening import pre_screening
 from test import Pre_Screening_T
+from k_arm.optimization import trigger_optimization
+import pickle
+
 
 SEED = 666
 FILE_ROOT_PATH = 'D:\\UULi\\Datasets\\TrojAi\\Round1\\TrainData\\models\\unzip\\id-00000102'
 MODEL_PATH = os.path.join(FILE_ROOT_PATH, 'model.pt')
 DATA_PATH = os.path.join(FILE_ROOT_PATH, 'clean-example-data')
-
+PARAMS = {
+    'init_cost': 0,  # 或 1e-03
+    'steps': 1000,
+    'round': 60,
+    'lr': 1e-01,
+    'attack_success_threshold': 0.99,
+    'patience': 5,
+    'channels': 3,
+    'batch_size': 32,
+    'single_pixel_trigger_optimization': True,
+    'epsilon': 1e-07,
+    'bandits_epsilon': 0.3,
+    'beta': 1e+4,
+    'warmup_rounds': 2,
+    'cost_multiplier': 2,
+    'early_stop_threshold': 1,
+    'early_stop_patience': 10,
+    'central_init': True,
+}
 
 if __name__ == '__main__':
     print(f"{'-' * 40}掃描檔案: {FILE_ROOT_PATH}{'-' * 40}")
@@ -43,6 +69,25 @@ if __name__ == '__main__':
         for i in range(number_of_classes):
             candidates.append(f'{target_classes[i]}-{victim_classes[i]}')
         print(f'可能的 target-victim 配對: {candidates}')
+
+    # 臨時
+    # ---
+    temp_dict = {
+        'target_classes': target_classes,
+        'victim_classes': victim_classes,
+        'backdoor_type': backdoor_type,
+        'model': model,
+        'DATA_PATH': DATA_PATH,
+        'number_of_classes': number_of_classes,
+        'forward': 'forward',
+        'PARAMS': PARAMS,
+    }
+    with open('temp_var', 'wb') as f:
+        pickle.dump(temp_dict, f)
+    # ---
+    #trigger_optimization(target_classes, victim_classes, backdoor_type, model, DATA_PATH, number_of_classes, 'forward', PARAMS)
+
+
 
     TimeCost = time.time() - StartTime
     print(f"{'*' * 20}檢測結束{'*' * 20}")
