@@ -37,21 +37,19 @@ def pre_process(filtered_target_classes, filtered_victim_classes):
     :return: 經過對應組合後的 target_classes(若無後門則為None) 與 victim_classes(若是universal或無後門則為None)
     """
     if filtered_victim_classes is None:
-        if filtered_target_classes is None:# BUG待修正
-            # 模型安全的(無target label，也無victim label)
-            number_of_classes = 0
-            backdoor_type = None
-        else:
-            # universal backdoor(因為pre-screening的輸出假如只有target label)
-            number_of_classes = 1
-            backdoor_type = 'universal'
+        # universal backdoor(因為pre-screening的輸出假如只有target label)
+        number_of_classes = 1
+        backdoor_type = 'universal'
         return filtered_target_classes, filtered_victim_classes, number_of_classes, backdoor_type
+    elif not filtered_target_classes:
+        backdoor_type = None
+        return None, None, None, backdoor_type
     else:
         # label specific backdoor
         # 將所有可能的 target label 與 victim label 配對組合出來(target_classes與victim_classes中的元素互相對應)
         target_classes, victim_classes = target_victim_combination(filtered_target_classes, filtered_victim_classes)
         number_of_classes = len(victim_classes)
-        assert len(target_classes) == len(victim_classes) #測試用
+        assert len(target_classes) == len(victim_classes)  # 測試用
         backdoor_type = 'label specific'
         return target_classes, victim_classes, number_of_classes, backdoor_type
 

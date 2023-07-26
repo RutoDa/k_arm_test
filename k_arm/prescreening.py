@@ -29,7 +29,7 @@ def universal_backdoor_pre_scan(top_k_labels, num_of_classes):
     max_label = np.argmax(labels_count)
     if max_count > UNIVERSAL_THETA * top_k_labels.shape[0]:
         target_label = max_label
-    return target_label
+    return torch.tensor(target_label).unsqueeze(0)
 
 
 def label_specific_backdoor_pre_scan(top_k_labels, top_k_values, num_of_classes):
