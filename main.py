@@ -121,15 +121,18 @@ PARAMS = {
     #trigger_optimization(target_classes, victim_classes, backdoor_type, model, DATA_PATH, number_of_classes, 'forward', PARAMS)
 
 
-
-
 if __name__ == '__main__':
-    result = []
+    header = [['id', 'result', 'type', 'time cost', 'pre-screening', 'reverse', 'trigger size', 'sym ratio']]
+    with open('result.csv', 'w', newline='') as file:
+        w = csv.writer(file)
+        w.writerows(header)
     count = 0
     for file in os.listdir('D:\\UULi\\Datasets\\TrojAi\\Round1\\TrainData\\models\\unzip'):
         count += 1
         if count == 51:
             break
+
+        result = {'id': file}
         FILE_ROOT_PATH = os.path.join('D:\\UULi\\Datasets\\TrojAi\\Round1\\TrainData\\models\\unzip', file)
         MODEL_PATH = os.path.join(FILE_ROOT_PATH, 'model.pt')
         DATA_PATH = os.path.join(FILE_ROOT_PATH, 'clean-example-data')
@@ -139,60 +142,74 @@ if __name__ == '__main__':
         setup_seed(SEED)
         model = load_model(MODEL_PATH)
 
-        print(f"{'*' * 20}Pre-Screening開始{'*' * 20}")
+        print(f"{'*' * 3}Pre-Screening開始{'*' * 3}")
 
         # pre_screening會回傳過濾後可疑的target classes與victim classes
         FilteredTargetClasses, FilteredVictimClasses = pre_screening(model, DATA_PATH)
 
-        print(f"{'*' * 20}Pre-Screening結束{'*' * 20}")
+        print(f"{'*' * 3}Pre-Screening結束{'*' * 3}")
+        result['pre-screening'] = f'Targets: {FilteredTargetClasses}, Victims: {FilteredVictimClasses}'
 
         target_classes, victim_classes, number_of_classes, backdoor_type = pre_process(
             FilteredTargetClasses, FilteredVictimClasses)
         if backdoor_type is None:
-            print(f"{'*' * 20}檢測結束{'*' * 20}")
+            print(f"{'*' * 3}檢測結束{'*' * 3}")
             print('檢測結果: Model是安全的(Benign)')
-            result.append(0)
+            TimeCost = time.time() - StartTime
+            result['result'] = 'False'
         else:
             if backdoor_type == "universal":
                 print(f'可能的攻擊方式: Universal Backdoor Attack')
                 print(f'可能的 target class: {target_classes.item()}')
                 print(f'可能的 victim classes: ALL')
+                result['type'] = 'Universal'
             else:
                 print(f'可能的攻擊方式: Label Specific Backdoor Attack')
                 candidates = []
                 for i in range(number_of_classes):
                     candidates.append(f'{target_classes[i]}-{victim_classes[i]}')
                 print(f'可能的 target-victim 配對: {candidates}')
-            print(f"{'*' * 20}Trigger Reverse Engineering開始{'*' * 20}")
+                result['type'] = 'label specific'
+            print(f"{'*' * 3}Trigger Reverse Engineering開始{'*' * 3}")
             l1_norm, mask, target_class, victim_class, reverse_times = \
                 trigger_reverse_engineering(target_classes, victim_classes, backdoor_type, model, DATA_PATH,
                                             number_of_classes, 'forward', PARAMS)
-            print(f"{'*' * 20}Trigger Reverse Engineering結束{'*' * 20}")
+            print(f"{'*' * 3}Trigger Reverse Engineering結束{'*' * 3}")
             print(f'Target Class: {target_class} Victim Class: {victim_class} '
                   f'Trigger Size: {l1_norm} Optimization Steps: {reverse_times}')
-
+            result['reverse'] = f'Target Class: {target_class} Victim Class: {victim_class} Trigger Size: {l1_norm} ' \
+                                f'Optimization Steps: {reverse_times}'
+            result['trigger size'] = l1_norm
             PARAMS['step'] = reverse_times
-            print(f"{'*' * 20}Symmetric Check開始{'*' * 20}")
-            if backdoor_type == 'label specific':
+
+            if backdoor_type == 'label specific' and PARAMS[
+                        'label_specific_attack_trigger_size_bound'] > l1_norm:
+                print(f"{'*' * 3}Symmetric Check開始{'*' * 3}")
                 symmetric_l1_norm, _, _, _, _ = \
                     trigger_reverse_engineering([victim_class.item()], torch.IntTensor([target_class]), backdoor_type,
                                                 model, DATA_PATH, 1, 'backward', PARAMS)
-            print(f"{'*' * 20}Symmetric Check結束{'*' * 20}")
+                result['sym ratio'] = symmetric_l1_norm / l1_norm
+                print(f"{'*' * 3}Symmetric Check結束{'*' * 3}")
 
             TimeCost = time.time() - StartTime
             print(f"{'*' * 20}檢測結束{'*' * 20}")
+
             if ((backdoor_type == 'universal' and PARAMS['universal_attack_trigger_size_bound'] > l1_norm)
                     or (backdoor_type == 'label specific' and PARAMS[
                         'label_specific_attack_trigger_size_bound'] > l1_norm
                         and symmetric_l1_norm / l1_norm > PARAMS['symmetric_check_bound'])):
                 print("檢測結果: Model含有後門(Abnormal)")
-                result.append(1)
+                result['result'] = 'True'
             else:
                 print("檢測結果: Model是安全的(Benign)")
-                result.append(0)
+                result['result'] = 'False'
 
-            print(f"整體耗時: {TimeCost}")
-    with open('result.csv', 'w', newline='') as file:
-        writer = csv.writer(file, quoting=csv.QUOTE_ALL, delimiter=';')
-        writer.writerows(result)
-    print(result)
+        print(f"整體耗時: {TimeCost}")
+        result['time cost'] = TimeCost
+        results = [[result.get('id', ''), result.get('result', ''), result.get('type', ''), result.get('time cost', '')
+                    , result.get('pre-screening', ''), result.get('reverse', ''), result.get('trigger size')
+                    , result.get('sym ratio', '')]]
+        with open('result.csv', 'a', newline='') as result_file:
+            writer = csv.writer(result_file)
+            writer.writerows(results)
+

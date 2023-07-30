@@ -61,8 +61,6 @@ def trigger_reverse_engineering(
 
     index = torch.argmin(torch.Tensor(l1_norm))
 
-    print(index)
-
     if victim_classes is None:
         target_class = target_classes[index]
         victim_class = 'all'
