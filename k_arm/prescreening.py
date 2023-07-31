@@ -84,8 +84,8 @@ def label_specific_backdoor_pre_scan(top_k_labels, top_k_values, num_of_classes)
                 triggered_class_pr = triggered_class_pr[filtered_indexes]
 
                 # 由於此階段已排除 universal attack，所以設定一個閥值來避免太多不必要的 triggered label，此先設為3
-                if len(target_classes) > 3:
-                    triggered_classes = triggered_classes[torch.topk(triggered_class_pr, 3, dim=0)]  # paper沒考慮中位數
+                if len(triggered_class) > 3:
+                    triggered_class = triggered_class[torch.topk(triggered_class_pr, 3, dim=0)[1]]  # paper沒考慮中位數
                     # triggered_classes = triggered_classes[np.intersect1d(torch.topk(triggered_class_pr,3,dim=0)[1], torch.topk(triggered_class_median,3,dim=0)[1])] #也考慮中位數，之後跑跑看
                 target_classes.append(target_class)
                 triggered_classes.append(triggered_class)
@@ -125,7 +125,7 @@ def pre_screening(model, data_path):
     CleanDataLoader = DataLoader(
         # 暫時先將num_workers設為0，解決方式: https://blog.csdn.net/JustPeanut/article/details/119146148
         # 主程式使用 if __name__ == 'main':
-        dataset=dataset, batch_size=32, shuffle=True, num_workers=0, pin_memory=True
+        dataset=dataset, batch_size=32, shuffle=True, num_workers=0, pin_memory=True # num_workers=4
     )
 
     # 蒐集每個input輸入model後的 logits 與 prs
