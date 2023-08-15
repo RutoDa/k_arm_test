@@ -1,7 +1,7 @@
 import numpy as np
 import torch
 import torch.optim as optim
-from matplotlib import pyplot as plt
+#from matplotlib import pyplot as plt
 from tqdm import tqdm
 import torch.nn as nn
 
@@ -103,6 +103,7 @@ class Scanner:
         total_times = [0] * self.number_of_classes
         first_best_reg = [1e+10] * self.number_of_classes
 
+        cross_entropy_loss = nn.CrossEntropyLoss()
         # optimizers 存放每個arms的 optimizer
         optimizers = []
         for i in range(self.number_of_classes):
@@ -110,8 +111,8 @@ class Scanner:
             optimizer = optim.Adam(
                 [self.pattern_tanh_tensor[i], self.mask_tanh_tensor[i]], lr=self.lr, betas=(0.5, 0.9))
             optimizers.append(optimizer)
-        cross_entropy_loss = nn.CrossEntropyLoss()
-        pbar = tqdm(range(1000))  # !!!!!!!先用10次
+
+        pbar = tqdm(range(self.steps))  # !!!!!!!先用10次
         for step in pbar:
             target_tensor = torch.Tensor([target_classes[target_index]]).long().to(self.device)
             total_times[target_index] += 1

@@ -1,0 +1,446 @@
+id,result,type,time cost,pre-screening,reverse,trigger size,sym ratio
+id-00000000,False,label specific,32.6272029876709,"Targets: [0], Victims: [tensor([4, 7])]",Target Class: 0 Victim Class: 4 Trigger Size: 10000000000.0 Optimization Steps: 21,10000000000.0,
+id-00000001,False,Universal,1643.9113094806671,"Targets: tensor([0]), Victims: None",Target Class: 0 Victim Class: all Trigger Size: 2885.2230224609375 Optimization Steps: 161,2885.2230224609375,
+id-00000002,False,,17.549953937530518,"Targets: [], Victims: []",,,
+id-00000003,True,label specific,35.77088284492493,"Targets: [0, 1], Victims: [tensor([5, 8]), tensor([6])]",Target Class: 0 Victim Class: 8 Trigger Size: 120.41090393066406 Optimization Steps: 98,120.41090393066406,55.78819373206954
+id-00000004,False,label specific,10.38974905014038,"Targets: [12], Victims: [tensor([14])]",Target Class: 12 Victim Class: 14 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000005,False,Universal,848.5646343231201,"Targets: tensor([0]), Victims: None",Target Class: 0 Victim Class: all Trigger Size: 3799.326904296875 Optimization Steps: 116,3799.326904296875,
+id-00000006,True,Universal,157.88350629806519,"Targets: tensor([10]), Victims: None",Target Class: 10 Victim Class: all Trigger Size: 824.5954318576389 Optimization Steps: 66,824.5954318576389,
+id-00000007,True,label specific,99.69884490966797,"Targets: [1, 9], Victims: [tensor([20]), tensor([20])]",Target Class: 9 Victim Class: 20 Trigger Size: 514.91015625 Optimization Steps: 310,514.91015625,10.242895453545446
+id-00000008,False,,20.20454978942871,"Targets: [], Victims: []",,,
+id-00000009,True,Universal,3175.2218885421753,"Targets: tensor([4]), Victims: None",Target Class: 4 Victim Class: all Trigger Size: 93.59891401018415 Optimization Steps: 127,93.59891401018415,
+id-00000010,False,,12.298462390899658,"Targets: [], Victims: []",,,
+id-00000011,False,,11.590208768844604,"Targets: [], Victims: []",,,
+id-00000012,False,,20.46985673904419,"Targets: [], Victims: []",,,
+id-00000013,True,label specific,241.6618514060974,"Targets: [0, 2, 3, 4, 5, 7, 11, 12, 15, 16], Victims: [tensor([15]), tensor([ 1, 10]), tensor([4]), tensor([14]), tensor([10]), tensor([1, 9]), tensor([ 1, 10, 15]), tensor([ 4, 14]), tensor([14]), tensor([4])]",Target Class: 11 Victim Class: 15 Trigger Size: 124.50299835205078 Optimization Steps: 127,124.50299835205078,121.63778970549224
+id-00000014,False,,11.132597923278809,"Targets: [], Victims: []",,,
+id-00000015,False,,8.272382497787476,"Targets: [], Victims: []",,,
+id-00000016,False,,17.52834439277649,"Targets: [], Victims: []",,,
+id-00000017,False,,8.810150861740112,"Targets: [], Victims: []",,,
+id-00000018,False,,16.901154279708862,"Targets: [], Victims: []",,,
+id-00000019,False,,16.05219841003418,"Targets: [], Victims: []",,,
+id-00000020,False,,3.6919925212860107,"Targets: [], Victims: []",,,
+id-00000021,False,,12.595725774765015,"Targets: [], Victims: []",,,
+id-00000022,True,label specific,33.65658688545227,"Targets: [0, 1, 2, 3, 5, 6, 7, 9, 10], Victims: [tensor([11]), tensor([6, 7, 9]), tensor([ 0, 10]), tensor([11]), tensor([6, 8]), tensor([5]), tensor([1, 8]), tensor([3]), tensor([2])]",Target Class: 5 Victim Class: 6 Trigger Size: 54.83860778808594 Optimization Steps: 103,54.83860778808594,37.57739260074632
+id-00000023,True,label specific,136.11167430877686,"Targets: [3, 9, 12, 13], Victims: [tensor([8]), tensor([6]), tensor([1, 8]), tensor([0])]",Target Class: 12 Victim Class: 8 Trigger Size: 389.1537170410156 Optimization Steps: 201,389.1537170410156,10.612619766528445
+id-00000024,False,label specific,92.06118702888489,"Targets: [8], Victims: [tensor([5, 9])]",Target Class: 8 Victim Class: 5 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000025,False,,6.430930852890015,"Targets: [], Victims: []",,,
+id-00000026,False,label specific,11.79649543762207,"Targets: [9, 11], Victims: [tensor([10, 16]), tensor([16])]",Target Class: 9 Victim Class: 10 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000027,True,Universal,1979.9323785305023,"Targets: tensor([6]), Victims: None",Target Class: 6 Victim Class: all Trigger Size: 1035.9530290876116 Optimization Steps: 62,1035.9530290876116,
+id-00000028,False,label specific,45.83541822433472,"Targets: [2], Victims: [tensor([8])]",Target Class: 2 Victim Class: 8 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000029,False,label specific,10.320770502090454,"Targets: [8], Victims: [tensor([2, 6])]",Target Class: 8 Victim Class: 2 Trigger Size: 10000000000.0 Optimization Steps: 21,10000000000.0,
+id-00000030,False,label specific,17.183552503585815,"Targets: [1, 4], Victims: [tensor([3, 5]), tensor([1])]",Target Class: 1 Victim Class: 3 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000031,False,label specific,2072.59046626091,"Targets: [1, 3, 4], Victims: [tensor([0]), tensor([4]), tensor([3])]",Target Class: 4 Victim Class: 3 Trigger Size: 1736.4454345703125 Optimization Steps: 978,1736.4454345703125,
+id-00000032,True,label specific,227.4209806919098,"Targets: [2, 8], Victims: [tensor([4, 8]), tensor([4])]",Target Class: 2 Victim Class: 4 Trigger Size: 91.61526489257812 Optimization Steps: 96,91.61526489257812,12.135183669553696
+id-00000033,False,,12.049734830856323,"Targets: [], Victims: []",,,
+id-00000034,False,,7.609855651855469,"Targets: [], Victims: []",,,
+id-00000035,False,,8.713872909545898,"Targets: [], Victims: []",,,
+id-00000036,False,label specific,1140.3475620746613,"Targets: [1, 2, 3, 4, 5, 6, 8, 9, 10, 13, 14, 15], Victims: [tensor([8]), tensor([9]), tensor([4, 6]), tensor([7]), tensor([7]), tensor([7]), tensor([ 1, 10, 11]), tensor([2, 6]), tensor([ 1,  8, 14]), tensor([11]), tensor([ 0, 13]), tensor([14])]",Target Class: 1 Victim Class: 8 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000037,True,label specific,69.78644633293152,"Targets: [10, 14], Victims: [tensor([13]), tensor([4])]",Target Class: 14 Victim Class: 4 Trigger Size: 120.689697265625 Optimization Steps: 84,120.689697265625,82857113.95887488
+id-00000038,False,,16.580349445343018,"Targets: [], Victims: []",,,
+id-00000039,False,label specific,11.188262224197388,"Targets: [1, 8, 12], Victims: [tensor([2, 5]), tensor([5]), tensor([5])]",Target Class: 1 Victim Class: 2 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000040,True,Universal,586.1445779800415,"Targets: tensor([2]), Victims: None",Target Class: 2 Victim Class: all Trigger Size: 116.95089530944824 Optimization Steps: 105,116.95089530944824,
+id-00000041,False,label specific,226.33615922927856,"Targets: [0, 7, 8, 10, 12, 13, 14, 15, 17, 20], Victims: [tensor([20]), tensor([11]), tensor([ 1,  7, 11]), tensor([ 0, 19]), tensor([9]), tensor([ 1,  3, 19]), tensor([5, 9]), tensor([7]), tensor([19]), tensor([0])]",Target Class: 20 Victim Class: 0 Trigger Size: 695.2594604492188 Optimization Steps: 279,695.2594604492188,1.9207072590070293
+id-00000042,True,label specific,631.8594088554382,"Targets: [4, 11], Victims: [tensor([ 9, 10]), tensor([10])]",Target Class: 4 Victim Class: 10 Trigger Size: 33.41248321533203 Optimization Steps: 69,33.41248321533203,299289338.52516794
+id-00000043,False,,12.047940492630005,"Targets: [], Victims: []",,,
+id-00000044,False,label specific,165.35660219192505,"Targets: [0], Victims: [tensor([6])]",Target Class: 0 Victim Class: 6 Trigger Size: 895.7700805664062 Optimization Steps: 247,895.7700805664062,0.9431327943281606
+id-00000045,False,,17.712972164154053,"Targets: [], Victims: []",,,
+id-00000046,False,,6.463090419769287,"Targets: [], Victims: []",,,
+id-00000047,False,,6.469682455062866,"Targets: [], Victims: []",,,
+id-00000048,True,label specific,186.49200868606567,"Targets: [5], Victims: [tensor([7])]",Target Class: 5 Victim Class: 7 Trigger Size: 101.61225128173828 Optimization Steps: 103,101.61225128173828,30.32386193632161
+id-00000049,True,label specific,19.07635188102722,"Targets: [3, 6], Victims: [tensor([2]), tensor([1])]",Target Class: 6 Victim Class: 1 Trigger Size: 106.26641845703125 Optimization Steps: 79,106.26641845703125,94103105.6207422
+id-00000050,False,,7.913066864013672,"Targets: [], Victims: []",,,
+id-00000051,False,,9.256797313690186,"Targets: [], Victims: []",,,
+id-00000052,True,label specific,47.6233868598938,"Targets: [2], Victims: [tensor([4, 6])]",Target Class: 2 Victim Class: 6 Trigger Size: 26.973079681396484 Optimization Steps: 79,26.973079681396484,370740016.2724862
+id-00000053,False,Universal,4068.8110830783844,"Targets: tensor([1]), Victims: None",Target Class: 1 Victim Class: all Trigger Size: 10413.472778320312 Optimization Steps: 166,10413.472778320312,
+id-00000054,False,,14.109715700149536,"Targets: [], Victims: []",,,
+id-00000055,False,label specific,14.277221441268921,"Targets: [14], Victims: [tensor([12])]",Target Class: 14 Victim Class: 12 Trigger Size: 10000000000.0 Optimization Steps: 21,10000000000.0,
+id-00000056,False,label specific,47.49352955818176,"Targets: [1, 2, 6, 7, 16], Victims: [tensor([ 7,  8, 16]), tensor([11]), tensor([10]), tensor([8]), tensor([7])]",Target Class: 1 Victim Class: 8 Trigger Size: 2028.91552734375 Optimization Steps: 239,2028.91552734375,
+id-00000057,False,label specific,11.388310194015503,"Targets: [10], Victims: [tensor([1])]",Target Class: 10 Victim Class: 1 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000058,False,label specific,28.06581687927246,"Targets: [8, 11, 17, 18], Victims: [tensor([1]), tensor([15]), tensor([4]), tensor([1])]",Target Class: 8 Victim Class: 1 Trigger Size: 10000000000.0 Optimization Steps: 21,10000000000.0,
+id-00000059,False,,14.115655899047852,"Targets: [], Victims: []",,,
+id-00000060,False,label specific,324.40434288978577,"Targets: [2, 6, 9], Victims: [tensor([9]), tensor([1, 2, 9]), tensor([2])]",Target Class: 2 Victim Class: 9 Trigger Size: 10000000000.0 Optimization Steps: 21,10000000000.0,
+id-00000061,False,label specific,66.93280124664307,"Targets: [0, 2, 3, 12], Victims: [tensor([12]), tensor([6]), tensor([12]), tensor([0, 3])]",Target Class: 12 Victim Class: 3 Trigger Size: 227.2919158935547 Optimization Steps: 178,227.2919158935547,2.602163575874359
+id-00000062,False,label specific,67.13302826881409,"Targets: [1, 2, 3, 4, 5, 6, 10, 14, 15, 17, 18, 21, 22], Victims: [tensor([ 2, 22]), tensor([ 1, 23]), tensor([14, 15, 23]), tensor([8]), tensor([8]), tensor([8]), tensor([8]), tensor([2]), tensor([ 3, 14]), tensor([15]), tensor([12]), tensor([15, 19, 22]), tensor([1])]",Target Class: 22 Victim Class: 1 Trigger Size: 334.48626708984375 Optimization Steps: 163,334.48626708984375,2.1547641400724022
+id-00000063,False,label specific,8.242540121078491,"Targets: [2, 5], Victims: [tensor([1]), tensor([3])]",Target Class: 2 Victim Class: 1 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000064,True,Universal,824.5776777267456,"Targets: tensor([1]), Victims: None",Target Class: 1 Victim Class: all Trigger Size: 216.37274932861328 Optimization Steps: 82,216.37274932861328,
+id-00000065,False,,17.090968132019043,"Targets: [], Victims: []",,,
+id-00000066,False,label specific,17.749913692474365,"Targets: [7], Victims: [tensor([8])]",Target Class: 7 Victim Class: 8 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000067,True,Universal,3281.07292509079,"Targets: tensor([1]), Victims: None",Target Class: 1 Victim Class: all Trigger Size: 862.007246537642 Optimization Steps: 71,862.007246537642,
+id-00000068,True,Universal,678.1912469863892,"Targets: tensor([0]), Victims: None",Target Class: 0 Victim Class: all Trigger Size: 567.5093383789062 Optimization Steps: 115,567.5093383789062,
+id-00000069,True,label specific,37.879610776901245,"Targets: [3, 4, 15], Victims: [tensor([15]), tensor([13]), tensor([3])]",Target Class: 4 Victim Class: 13 Trigger Size: 174.76739501953125 Optimization Steps: 101,174.76739501953125,65.49382148216677
+id-00000070,False,,14.030179500579834,"Targets: [], Victims: []",,,
+id-00000071,False,,12.382782459259033,"Targets: [], Victims: []",,,
+id-00000072,False,label specific,9.793334245681763,"Targets: [1], Victims: [tensor([2])]",Target Class: 1 Victim Class: 2 Trigger Size: 10000000000.0 Optimization Steps: 21,10000000000.0,
+id-00000073,False,,9.73539113998413,"Targets: [], Victims: []",,,
+id-00000074,True,Universal,116.48888731002808,"Targets: tensor([2]), Victims: None",Target Class: 2 Victim Class: all Trigger Size: 77.1730228000217 Optimization Steps: 51,77.1730228000217,
+id-00000075,True,label specific,23.511597156524658,"Targets: [5], Victims: [tensor([3, 7])]",Target Class: 5 Victim Class: 7 Trigger Size: 52.868919372558594 Optimization Steps: 87,52.868919372558594,374.34143876264767
+id-00000076,False,label specific,11.785981893539429,"Targets: [8], Victims: [tensor([9])]",Target Class: 8 Victim Class: 9 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000077,False,,7.593531608581543,"Targets: [], Victims: []",,,
+id-00000078,False,,13.021196365356445,"Targets: [], Victims: []",,,
+id-00000079,False,label specific,131.03706431388855,"Targets: [9, 21], Victims: [tensor([1]), tensor([1])]",Target Class: 9 Victim Class: 1 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000080,True,label specific,500.08529710769653,"Targets: [3, 13], Victims: [tensor([10]), tensor([10])]",Target Class: 13 Victim Class: 10 Trigger Size: 114.49464416503906 Optimization Steps: 82,114.49464416503906,58.24329138280549
+id-00000081,False,,14.089277744293213,"Targets: [], Victims: []",,,
+id-00000082,False,Universal,34.564368724823,"Targets: tensor([2]), Victims: None",Target Class: 2 Victim Class: all Trigger Size: 5811.7144775390625 Optimization Steps: 18,5811.7144775390625,
+id-00000083,True,label specific,22.688708543777466,"Targets: [2], Victims: [tensor([7])]",Target Class: 2 Victim Class: 7 Trigger Size: 48.77121353149414 Optimization Steps: 73,48.77121353149414,93.75578676427627
+id-00000084,True,Universal,897.533429145813,"Targets: tensor([0]), Victims: None",Target Class: 0 Victim Class: all Trigger Size: 171.70403442382812 Optimization Steps: 107,171.70403442382812,
+id-00000085,True,label specific,1123.6005647182465,"Targets: [0, 8, 12, 19], Victims: [tensor([ 1, 18, 19]), tensor([ 7, 16]), tensor([17]), tensor([18])]",Target Class: 8 Victim Class: 16 Trigger Size: 346.96417236328125 Optimization Steps: 98,346.96417236328125,28821419.606199913
+id-00000086,False,,17.34115505218506,"Targets: [], Victims: []",,,
+id-00000087,False,,5.498942852020264,"Targets: [], Victims: []",,,
+id-00000088,False,label specific,73.36021900177002,"Targets: [0, 3, 9, 11, 16, 17, 18, 19, 23], Victims: [tensor([ 1, 23]), tensor([ 4, 19]), tensor([4]), tensor([ 4, 19]), tensor([2]), tensor([3, 9]), tensor([ 4, 19]), tensor([4]), tensor([0])]",Target Class: 18 Victim Class: 19 Trigger Size: 384.85443115234375 Optimization Steps: 151,384.85443115234375,2.9958681808053504
+id-00000089,True,Universal,142.23385548591614,"Targets: tensor([9]), Victims: None",Target Class: 9 Victim Class: all Trigger Size: 339.9654017857143 Optimization Steps: 28,339.9654017857143,
+id-00000090,False,label specific,7.880602598190308,"Targets: [1], Victims: [tensor([0])]",Target Class: 1 Victim Class: 0 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000091,False,,6.620845079421997,"Targets: [], Victims: []",,,
+id-00000092,False,label specific,13.490098476409912,"Targets: [0], Victims: [tensor([5])]",Target Class: 0 Victim Class: 5 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000093,True,label specific,38.07493352890015,"Targets: [4, 10, 11], Victims: [tensor([6]), tensor([6]), tensor([13])]",Target Class: 11 Victim Class: 13 Trigger Size: 246.5424041748047 Optimization Steps: 77,246.5424041748047,51.24048809081509
+id-00000094,False,label specific,772.6253283023834,"Targets: [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 15, 18, 20, 21], Victims: [tensor([2]), tensor([ 9, 22]), tensor([15]), tensor([20]), tensor([11, 20]), tensor([3]), tensor([3]), tensor([ 2, 22]), tensor([19]), tensor([20]), tensor([20]), tensor([12, 20]), tensor([ 3, 11]), tensor([15,  5, 22]), tensor([5]), tensor([2, 8])]",Target Class: 3 Victim Class: 15 Trigger Size: 856.5682373046875 Optimization Steps: 245,856.5682373046875,4.468897636841462
+id-00000095,False,label specific,22.240153551101685,"Targets: [2], Victims: [tensor([3, 4, 5])]",Target Class: 2 Victim Class: 3 Trigger Size: 10000000000.0 Optimization Steps: 21,10000000000.0,
+id-00000096,True,label specific,37.55736589431763,"Targets: [2], Victims: [tensor([3])]",Target Class: 2 Victim Class: 3 Trigger Size: 149.59913635253906 Optimization Steps: 112,149.59913635253906,82.21729763041674
+id-00000097,False,,17.50396156311035,"Targets: [], Victims: []",,,
+id-00000098,False,label specific,79.86445927619934,"Targets: [1, 2, 4, 7, 8, 11], Victims: [tensor([3, 7]), tensor([3, 6]), tensor([10]), tensor([ 1,  4, 12]), tensor([5, 6]), tensor([12])]",Target Class: 1 Victim Class: 7 Trigger Size: 520.50244140625 Optimization Steps: 185,520.50244140625,0.8674892517652621
+id-00000099,False,label specific,18.66694450378418,"Targets: [2, 3], Victims: [tensor([7]), tensor([1])]",Target Class: 2 Victim Class: 7 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000100,False,,20.267292261123657,"Targets: [], Victims: []",,,
+id-00000101,True,Universal,185.93014001846313,"Targets: tensor([4]), Victims: None",Target Class: 4 Victim Class: all Trigger Size: 282.1248524983724 Optimization Steps: 31,282.1248524983724,
+id-00000102,True,label specific,77.21825766563416,"Targets: [6], Victims: [tensor([1, 2])]",Target Class: 6 Victim Class: 2 Trigger Size: 22.000186920166016 Optimization Steps: 70,22.000186920166016,454541592.591366
+id-00000103,True,Universal,494.19460344314575,"Targets: tensor([7]), Victims: None",Target Class: 7 Victim Class: all Trigger Size: 83.5587397984096 Optimization Steps: 69,83.5587397984096,
+id-00000104,False,,13.409391403198242,"Targets: [], Victims: []",,,
+id-00000105,False,,17.283063650131226,"Targets: [], Victims: []",,,
+id-00000106,False,label specific,58.980252265930176,"Targets: [1, 2, 3, 4, 10, 12, 13, 17], Victims: [tensor([2]), tensor([ 1, 17]), tensor([13]), tensor([9]), tensor([3]), tensor([ 3, 16]), tensor([3]), tensor([1, 2])]",Target Class: 2 Victim Class: 1 Trigger Size: 117.02783203125 Optimization Steps: 187,117.02783203125,1.9643464741543686
+id-00000107,False,label specific,229.24896478652954,"Targets: [0, 1, 9, 12, 13], Victims: [tensor([12]), tensor([0]), tensor([2]), tensor([0]), tensor([0])]",Target Class: 13 Victim Class: 0 Trigger Size: 1105.718505859375 Optimization Steps: 956,1105.718505859375,
+id-00000108,True,Universal,455.85304403305054,"Targets: tensor([9]), Victims: None",Target Class: 9 Victim Class: all Trigger Size: 283.13702087402345 Optimization Steps: 83,283.13702087402345,
+id-00000109,False,label specific,76.43703031539917,"Targets: [0, 2], Victims: [tensor([ 8, 10]), tensor([7])]",Target Class: 0 Victim Class: 8 Trigger Size: 283.7460021972656 Optimization Steps: 139,283.7460021972656,4.500575351839023
+id-00000110,True,Universal,2003.1719031333923,"Targets: tensor([3]), Victims: None",Target Class: 3 Victim Class: all Trigger Size: 73.77916717529297 Optimization Steps: 83,73.77916717529297,
+id-00000111,False,,10.94533109664917,"Targets: [], Victims: []",,,
+id-00000112,True,label specific,358.08257007598877,"Targets: [0, 16], Victims: [tensor([1]), tensor([11])]",Target Class: 16 Victim Class: 11 Trigger Size: 99.1943359375 Optimization Steps: 116,99.1943359375,83.2171498892444
+id-00000113,False,,18.308409214019775,"Targets: [], Victims: []",,,
+id-00000114,False,label specific,301.6820764541626,"Targets: [1, 2, 4, 14], Victims: [tensor([2]), tensor([1]), tensor([ 2, 16]), tensor([3])]",Target Class: 1 Victim Class: 2 Trigger Size: 757.11474609375 Optimization Steps: 140,757.11474609375,1.33425388131211
+id-00000115,False,,17.45164656639099,"Targets: [], Victims: []",,,
+id-00000116,False,Universal,3248.550849914551,"Targets: tensor([1]), Victims: None",Target Class: 1 Victim Class: all Trigger Size: 5533.819266183035 Optimization Steps: 116,5533.819266183035,
+id-00000117,False,label specific,13.00511121749878,"Targets: [2], Victims: [tensor([0, 3, 4])]",Target Class: 2 Victim Class: 0 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000118,False,,25.40241551399231,"Targets: [], Victims: []",,,
+id-00000119,False,,10.926257133483887,"Targets: [], Victims: []",,,
+id-00000120,False,label specific,2226.367737531662,"Targets: [0, 1, 2, 3, 6, 7, 8, 10, 11, 12, 15, 16, 17, 19, 20, 21], Victims: [tensor([ 8, 21]), tensor([ 7, 16]), tensor([11, 13, 16]), tensor([10]), tensor([19]), tensor([13, 16]), tensor([ 0, 19]), tensor([11, 16]), tensor([16, 13, 10]), tensor([14,  5,  4]), tensor([ 5, 21, 14]), tensor([10, 11]), tensor([5]), tensor([21]), tensor([13]), tensor([ 0,  5, 19])]",Target Class: 16 Victim Class: 11 Trigger Size: 1051.6719970703125 Optimization Steps: 219,1051.6719970703125,
+id-00000121,False,label specific,39.74085736274719,"Targets: [1, 6, 14], Victims: [tensor([14]), tensor([2]), tensor([1])]",Target Class: 1 Victim Class: 14 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000122,True,Universal,449.74557733535767,"Targets: tensor([2]), Victims: None",Target Class: 2 Victim Class: all Trigger Size: 97.94744415283203 Optimization Steps: 87,97.94744415283203,
+id-00000123,False,,11.765231847763062,"Targets: [], Victims: []",,,
+id-00000124,False,,12.506844997406006,"Targets: [], Victims: []",,,
+id-00000125,False,label specific,175.42600464820862,"Targets: [4, 8], Victims: [tensor([3]), tensor([3])]",Target Class: 4 Victim Class: 3 Trigger Size: 813.263427734375 Optimization Steps: 179,813.263427734375,2.807900749506098
+id-00000126,False,label specific,76.22197437286377,"Targets: [1, 2, 9, 10], Victims: [tensor([4]), tensor([4]), tensor([10]), tensor([0, 9])]",Target Class: 10 Victim Class: 0 Trigger Size: 266.32720947265625 Optimization Steps: 214,266.32720947265625,6.383336331687485
+id-00000127,False,label specific,230.7379150390625,"Targets: [2, 11, 14, 15, 22], Victims: [tensor([1]), tensor([21]), tensor([21]), tensor([21]), tensor([21])]",Target Class: 2 Victim Class: 1 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000128,True,label specific,49.69510793685913,"Targets: [1, 4, 5, 8, 9], Victims: [tensor([2]), tensor([1]), tensor([1]), tensor([2, 5, 7]), tensor([7])]",Target Class: 8 Victim Class: 2 Trigger Size: 244.42417907714844 Optimization Steps: 121,244.42417907714844,15.141646923451344
+id-00000129,False,,17.729063034057617,"Targets: [], Victims: []",,,
+id-00000130,False,,13.131453275680542,"Targets: [], Victims: []",,,
+id-00000131,False,label specific,1317.3795902729034,"Targets: [0, 1, 8, 10, 13, 17], Victims: [tensor([15]), tensor([15]), tensor([13]), tensor([16]), tensor([8]), tensor([ 0, 16])]",Target Class: 1 Victim Class: 15 Trigger Size: 1684.616455078125 Optimization Steps: 405,1684.616455078125,
+id-00000132,False,label specific,16.73827886581421,"Targets: [0, 8, 12, 18], Victims: [tensor([19]), tensor([4]), tensor([1]), tensor([19])]",Target Class: 0 Victim Class: 19 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000133,False,,10.230655193328857,"Targets: [], Victims: []",,,
+id-00000134,False,,11.668393850326538,"Targets: [], Victims: []",,,
+id-00000135,False,label specific,40.61774826049805,"Targets: [1, 5, 9], Victims: [tensor([4]), tensor([1]), tensor([7])]",Target Class: 5 Victim Class: 1 Trigger Size: 1508.553955078125 Optimization Steps: 258,1508.553955078125,
+id-00000136,False,,6.451930999755859,"Targets: [], Victims: []",,,
+id-00000137,True,label specific,589.9502079486847,"Targets: [2, 3, 4, 5, 6, 10, 12], Victims: [tensor([13]), tensor([ 2, 13]), tensor([8]), tensor([ 4,  8, 13]), tensor([8]), tensor([4]), tensor([3])]",Target Class: 3 Victim Class: 2 Trigger Size: 223.28207397460938 Optimization Steps: 177,223.28207397460938,21.039685740750333
+id-00000138,False,label specific,130.94886660575867,"Targets: [4], Victims: [tensor([10])]",Target Class: 4 Victim Class: 10 Trigger Size: 719.365234375 Optimization Steps: 143,719.365234375,7.27377312897927
+id-00000139,False,,2.6243269443511963,"Targets: [], Victims: []",,,
+id-00000140,False,label specific,287.01466703414917,"Targets: [2, 10, 13, 16], Victims: [tensor([0]), tensor([0]), tensor([3]), tensor([0])]",Target Class: 2 Victim Class: 0 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000141,True,label specific,1456.4605922698975,"Targets: [3, 4, 19], Victims: [tensor([20]), tensor([17]), tensor([12])]",Target Class: 19 Victim Class: 12 Trigger Size: 193.73573303222656 Optimization Steps: 163,193.73573303222656,32.91167247462227
+id-00000142,False,label specific,1844.2108731269836,"Targets: [0, 2, 3, 6, 8, 9, 10, 11, 17], Victims: [tensor([3]), tensor([1, 4, 9]), tensor([0]), tensor([ 5, 16]), tensor([1, 5]), tensor([5]), tensor([5]), tensor([4]), tensor([0])]",Target Class: 2 Victim Class: 1 Trigger Size: 4378.3525390625 Optimization Steps: 425,4378.3525390625,
+id-00000143,False,label specific,97.24881386756897,"Targets: [0, 1, 7], Victims: [tensor([5]), tensor([3]), tensor([6])]",Target Class: 1 Victim Class: 3 Trigger Size: 1479.166748046875 Optimization Steps: 205,1479.166748046875,
+id-00000144,False,,2.788980722427368,"Targets: [], Victims: []",,,
+id-00000145,False,,9.539626121520996,"Targets: [], Victims: []",,,
+id-00000146,False,,9.664697885513306,"Targets: [], Victims: []",,,
+id-00000147,False,,19.98484516143799,"Targets: [], Victims: []",,,
+id-00000148,False,label specific,373.0696756839752,"Targets: [0, 7, 11, 15, 17], Victims: [tensor([18]), tensor([10]), tensor([16]), tensor([16]), tensor([16])]",Target Class: 0 Victim Class: 18 Trigger Size: 10000000000.0 Optimization Steps: 21,10000000000.0,
+id-00000149,False,,9.46427845954895,"Targets: [], Victims: []",,,
+id-00000150,False,,6.986953973770142,"Targets: [], Victims: []",,,
+id-00000151,False,,2.916640043258667,"Targets: [], Victims: []",,,
+id-00000152,False,,7.358924388885498,"Targets: [], Victims: []",,,
+id-00000153,True,Universal,580.8192658424377,"Targets: tensor([19]), Victims: None",Target Class: 19 Victim Class: all Trigger Size: 1636.4735026041667 Optimization Steps: 63,1636.4735026041667,
+id-00000154,False,,3.025019407272339,"Targets: [], Victims: []",,,
+id-00000155,False,,11.072980403900146,"Targets: [], Victims: []",,,
+id-00000156,False,label specific,18.1731595993042,"Targets: [0, 2, 4, 6, 10], Victims: [tensor([12]), tensor([5]), tensor([ 8, 10]), tensor([10]), tensor([6])]",Target Class: 0 Victim Class: 12 Trigger Size: 10000000000.0 Optimization Steps: 21,10000000000.0,
+id-00000157,False,,12.449477434158325,"Targets: [], Victims: []",,,
+id-00000158,False,label specific,12.471770286560059,"Targets: [4], Victims: [tensor([0])]",Target Class: 4 Victim Class: 0 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000159,True,label specific,635.8410024642944,"Targets: [8], Victims: [tensor([5])]",Target Class: 8 Victim Class: 5 Trigger Size: 54.58509826660156 Optimization Steps: 103,54.58509826660156,59.49327996703649
+id-00000160,False,label specific,19.996350288391113,"Targets: [2, 7], Victims: [tensor([12]), tensor([4])]",Target Class: 2 Victim Class: 12 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000161,False,,6.556492328643799,"Targets: [], Victims: []",,,
+id-00000162,False,,11.457389116287231,"Targets: [], Victims: []",,,
+id-00000163,False,label specific,1099.481012582779,"Targets: [0, 7, 10], Victims: [tensor([10]), tensor([6]), tensor([2])]",Target Class: 0 Victim Class: 10 Trigger Size: 804.5567626953125 Optimization Steps: 138,804.5567626953125,0.8151278825792236
+id-00000164,True,Universal,2552.3722443580627,"Targets: tensor([18]), Victims: None",Target Class: 18 Victim Class: all Trigger Size: 777.3056869506836 Optimization Steps: 161,777.3056869506836,
+id-00000165,False,label specific,10.258039712905884,"Targets: [9], Victims: [tensor([4])]",Target Class: 9 Victim Class: 4 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000166,False,,11.502660512924194,"Targets: [], Victims: []",,,
+id-00000167,False,,11.112302780151367,"Targets: [], Victims: []",,,
+id-00000168,False,,10.316439151763916,"Targets: [], Victims: []",,,
+id-00000169,False,,6.106948614120483,"Targets: [], Victims: []",,,
+id-00000170,False,label specific,484.760906457901,"Targets: [2], Victims: [tensor([0])]",Target Class: 2 Victim Class: 0 Trigger Size: 916.8477783203125 Optimization Steps: 378,916.8477783203125,7.323419542774109
+id-00000171,False,,9.399004220962524,"Targets: [], Victims: []",,,
+id-00000172,False,,11.118836164474487,"Targets: [], Victims: []",,,
+id-00000173,False,,3.993023157119751,"Targets: [], Victims: []",,,
+id-00000174,False,,6.443248748779297,"Targets: [], Victims: []",,,
+id-00000175,False,,9.17429494857788,"Targets: [], Victims: []",,,
+id-00000176,False,,9.700076580047607,"Targets: [], Victims: []",,,
+id-00000177,True,Universal,2049.607510328293,"Targets: tensor([5]), Victims: None",Target Class: 5 Victim Class: all Trigger Size: 664.12333984375 Optimization Steps: 134,664.12333984375,
+id-00000178,False,,2.6641976833343506,"Targets: [], Victims: []",,,
+id-00000179,False,,16.523897886276245,"Targets: [], Victims: []",,,
+id-00000180,True,label specific,1477.6634047031403,"Targets: [0, 6], Victims: [tensor([1, 2]), tensor([5])]",Target Class: 0 Victim Class: 2 Trigger Size: 690.60888671875 Optimization Steps: 178,690.60888671875,14479975.847852785
+id-00000181,True,label specific,434.2893204689026,"Targets: [2, 4, 5, 10, 15], Victims: [tensor([ 5, 14]), tensor([7]), tensor([14]), tensor([7]), tensor([14])]",Target Class: 2 Victim Class: 14 Trigger Size: 33.63653564453125 Optimization Steps: 69,33.63653564453125,223.7858541356303
+id-00000182,False,,18.230083465576172,"Targets: [], Victims: []",,,
+id-00000183,True,label specific,2747.7031893730164,"Targets: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 13, 17, 18, 19, 20, 21], Victims: [tensor([17]), tensor([12, 20, 21]), tensor([ 0,  1, 10]), tensor([2]), tensor([ 5,  9, 12]), tensor([12]), tensor([ 8, 11, 12]), tensor([18]), tensor([ 6,  9, 11]), tensor([ 8, 11]), tensor([ 8, 19]), tensor([10]), tensor([0]), tensor([1, 7]), tensor([2]), tensor([21]), tensor([ 1, 12, 11])]",Target Class: 21 Victim Class: 11 Trigger Size: 425.5569763183594 Optimization Steps: 156,425.5569763183594,23498616.06432459
+id-00000184,False,,13.955691814422607,"Targets: [], Victims: []",,,
+id-00000185,False,,7.551476240158081,"Targets: [], Victims: []",,,
+id-00000186,False,,6.198354005813599,"Targets: [], Victims: []",,,
+id-00000187,False,label specific,104.32757019996643,"Targets: [1, 3, 4, 6, 8, 9, 10, 11, 13, 14, 15, 16, 20], Victims: [tensor([20]), tensor([ 8,  6, 15]), tensor([13, 20]), tensor([3]), tensor([6]), tensor([ 3,  6, 11]), tensor([11, 12]), tensor([ 3,  8, 12]), tensor([1]), tensor([13]), tensor([3, 6]), tensor([13, 20]), tensor([1])]",Target Class: 20 Victim Class: 1 Trigger Size: 737.390625 Optimization Steps: 178,737.390625,0.4210731480966457
+id-00000188,False,label specific,1430.7862091064453,"Targets: [0, 1, 2, 4, 5, 7, 9, 13, 15], Victims: [tensor([7]), tensor([3]), tensor([1, 9]), tensor([ 5, 12]), tensor([ 4, 12]), tensor([0]), tensor([1, 3, 6]), tensor([14]), tensor([14])]",Target Class: 13 Victim Class: 14 Trigger Size: 1096.019775390625 Optimization Steps: 526,1096.019775390625,
+id-00000189,True,label specific,48.667075634002686,"Targets: [0], Victims: [tensor([ 3, 18])]",Target Class: 0 Victim Class: 18 Trigger Size: 13.73945426940918 Optimization Steps: 77,13.73945426940918,533.8494992178033
+id-00000190,True,label specific,1000.4495198726654,"Targets: [1, 7, 8, 10], Victims: [tensor([9]), tensor([8]), tensor([10]), tensor([8])]",Target Class: 10 Victim Class: 8 Trigger Size: 82.87805938720703 Optimization Steps: 125,82.87805938720703,195.47100803618304
+id-00000191,False,label specific,821.4709134101868,"Targets: [0, 1, 2, 3, 5, 6, 7, 8, 10, 11, 12, 13, 16, 17, 18, 19, 20, 21, 22], Victims: [tensor([ 1,  6, 15]), tensor([15]), tensor([17]), tensor([2, 5]), tensor([17]), tensor([ 1,  4, 19]), tensor([14, 19]), tensor([6]), tensor([ 4, 13]), tensor([10, 15]), tensor([13, 17]), tensor([10]), tensor([ 0,  9, 18]), tensor([12,  1,  2]), tensor([6]), tensor([4]), tensor([12, 13]), tensor([ 4, 19]), tensor([1, 4, 6])]",Target Class: 7 Victim Class: 14 Trigger Size: 711.3124389648438 Optimization Steps: 235,711.3124389648438,6.254072564580682
+id-00000192,False,label specific,212.6898331642151,"Targets: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], Victims: [tensor([13]), tensor([1]), tensor([0, 2]), tensor([13]), tensor([ 0,  4, 10]), tensor([11, 12]), tensor([ 5, 10]), tensor([ 0, 10]), tensor([12, 13]), tensor([7]), tensor([ 6, 12]), tensor([ 6, 11]), tensor([1])]",Target Class: 13 Victim Class: 1 Trigger Size: 747.3206787109375 Optimization Steps: 383,747.3206787109375,5.1280592076086915
+id-00000193,False,,20.411783695220947,"Targets: [], Victims: []",,,
+id-00000194,False,,14.62452483177185,"Targets: [], Victims: []",,,
+id-00000195,False,Universal,265.77352237701416,"Targets: tensor([7]), Victims: None",Target Class: 7 Victim Class: all Trigger Size: 3664.0279134114585 Optimization Steps: 156,3664.0279134114585,
+id-00000196,False,label specific,240.72338366508484,"Targets: [0, 11, 13], Victims: [tensor([11, 13]), tensor([ 0,  5, 13]), tensor([12])]",Target Class: 0 Victim Class: 11 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000197,False,,10.923811912536621,"Targets: [], Victims: []",,,
+id-00000198,True,Universal,4593.790768146515,"Targets: tensor([1]), Victims: None",Target Class: 1 Victim Class: all Trigger Size: 1248.2555042613637 Optimization Steps: 136,1248.2555042613637,
+id-00000199,True,Universal,2974.5973365306854,"Targets: tensor([4]), Victims: None",Target Class: 4 Victim Class: all Trigger Size: 306.10232883029516 Optimization Steps: 144,306.10232883029516,
+id-00000200,False,label specific,835.3701615333557,"Targets: [19], Victims: [tensor([0])]",Target Class: 19 Victim Class: 0 Trigger Size: 1174.829833984375 Optimization Steps: 216,1174.829833984375,
+id-00000201,False,,19.869332790374756,"Targets: [], Victims: []",,,
+id-00000202,False,label specific,504.65786504745483,"Targets: [2, 5], Victims: [tensor([7, 9]), tensor([9])]",Target Class: 2 Victim Class: 7 Trigger Size: 828.98046875 Optimization Steps: 200,828.98046875,2.7019458672409162
+id-00000203,False,,17.48613667488098,"Targets: [], Victims: []",,,
+id-00000204,False,label specific,81.09473729133606,"Targets: [17], Victims: [tensor([9])]",Target Class: 17 Victim Class: 9 Trigger Size: 10000000000.0 Optimization Steps: 21,10000000000.0,
+id-00000205,True,Universal,88.10036444664001,"Targets: tensor([9]), Victims: None",Target Class: 9 Victim Class: all Trigger Size: 35.573119163513184 Optimization Steps: 54,35.573119163513184,
+id-00000206,False,label specific,299.2864797115326,"Targets: [0, 2, 3, 4, 5, 6, 8, 9, 10, 11, 13, 16], Victims: [tensor([ 2, 15]), tensor([ 8, 12]), tensor([17]), tensor([14]), tensor([12]), tensor([12]), tensor([2]), tensor([2]), tensor([3]), tensor([ 0, 17]), tensor([ 3, 10, 17]), tensor([3])]",Target Class: 4 Victim Class: 14 Trigger Size: 1518.04931640625 Optimization Steps: 343,1518.04931640625,
+id-00000207,False,label specific,79.0871148109436,"Targets: [7], Victims: [tensor([3])]",Target Class: 7 Victim Class: 3 Trigger Size: 10000000000.0 Optimization Steps: 21,10000000000.0,
+id-00000208,False,,14.67023491859436,"Targets: [], Victims: []",,,
+id-00000209,False,,6.318421840667725,"Targets: [], Victims: []",,,
+id-00000210,False,,8.353721618652344,"Targets: [], Victims: []",,,
+id-00000211,False,,18.184931755065918,"Targets: [], Victims: []",,,
+id-00000212,False,label specific,37.454235792160034,"Targets: [1, 4], Victims: [tensor([3]), tensor([5])]",Target Class: 1 Victim Class: 3 Trigger Size: 899.4613037109375 Optimization Steps: 205,899.4613037109375,3.0999028688368298
+id-00000213,False,label specific,66.2883768081665,"Targets: [9], Victims: [tensor([4])]",Target Class: 9 Victim Class: 4 Trigger Size: 10000000000.0 Optimization Steps: 21,10000000000.0,
+id-00000214,False,,13.622028589248657,"Targets: [], Victims: []",,,
+id-00000215,False,,16.186407804489136,"Targets: [], Victims: []",,,
+id-00000216,False,,6.229387998580933,"Targets: [], Victims: []",,,
+id-00000217,False,,6.2376015186309814,"Targets: [], Victims: []",,,
+id-00000218,False,,2.434854507446289,"Targets: [], Victims: []",,,
+id-00000219,False,label specific,50.39560651779175,"Targets: [6], Victims: [tensor([0])]",Target Class: 6 Victim Class: 0 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000220,False,,6.060251951217651,"Targets: [], Victims: []",,,
+id-00000221,False,,21.524623155593872,"Targets: [], Victims: []",,,
+id-00000222,False,,10.246219158172607,"Targets: [], Victims: []",,,
+id-00000223,False,label specific,32.411505937576294,"Targets: [9, 13], Victims: [tensor([5]), tensor([6])]",Target Class: 9 Victim Class: 5 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000224,False,label specific,9.7119460105896,"Targets: [0, 11], Victims: [tensor([12]), tensor([12])]",Target Class: 0 Victim Class: 12 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000225,False,,9.680684328079224,"Targets: [], Victims: []",,,
+id-00000226,False,,8.77011227607727,"Targets: [], Victims: []",,,
+id-00000227,False,,9.14785099029541,"Targets: [], Victims: []",,,
+id-00000228,False,label specific,42.158549308776855,"Targets: [2], Victims: [tensor([0])]",Target Class: 2 Victim Class: 0 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000229,False,,16.701091766357422,"Targets: [], Victims: []",,,
+id-00000230,False,label specific,10.612811803817749,"Targets: [4], Victims: [tensor([5])]",Target Class: 4 Victim Class: 5 Trigger Size: 10000000000.0 Optimization Steps: 21,10000000000.0,
+id-00000231,False,,2.4224913120269775,"Targets: [], Victims: []",,,
+id-00000232,False,,9.676013708114624,"Targets: [], Victims: []",,,
+id-00000233,False,,7.888827085494995,"Targets: [], Victims: []",,,
+id-00000234,False,label specific,1278.9124207496643,"Targets: [6], Victims: [tensor([11])]",Target Class: 6 Victim Class: 11 Trigger Size: 873.9107666015625 Optimization Steps: 295,873.9107666015625,7.50338179069732
+id-00000235,False,,14.617265939712524,"Targets: [], Victims: []",,,
+id-00000236,True,label specific,640.2766888141632,"Targets: [1, 6], Victims: [tensor([5, 6]), tensor([1])]",Target Class: 1 Victim Class: 6 Trigger Size: 108.79255676269531 Optimization Steps: 77,108.79255676269531,91918053.01361366
+id-00000237,False,label specific,49.253036975860596,"Targets: [3, 11, 13], Victims: [tensor([13]), tensor([5]), tensor([3])]",Target Class: 3 Victim Class: 13 Trigger Size: 10000000000.0 Optimization Steps: 21,10000000000.0,
+id-00000238,False,label specific,2903.5240228176117,"Targets: [1, 3, 6, 10, 17, 19, 20], Victims: [tensor([6]), tensor([11]), tensor([20]), tensor([19, 21,  8]), tensor([16, 20]), tensor([20]), tensor([ 6, 19])]",Target Class: 17 Victim Class: 20 Trigger Size: 1163.456298828125 Optimization Steps: 661,1163.456298828125,
+id-00000239,True,label specific,82.85792303085327,"Targets: [1, 5, 14, 22], Victims: [tensor([ 2, 23]), tensor([23]), tensor([23]), tensor([23])]",Target Class: 5 Victim Class: 23 Trigger Size: 34.07093048095703 Optimization Steps: 80,34.07093048095703,293505338.97479594
+id-00000240,False,,6.328764200210571,"Targets: [], Victims: []",,,
+id-00000241,False,label specific,34.32163858413696,"Targets: [0, 2, 8, 14, 15], Victims: [tensor([9]), tensor([3, 9]), tensor([3, 9]), tensor([3]), tensor([9])]",Target Class: 2 Victim Class: 9 Trigger Size: 226.57591247558594 Optimization Steps: 153,226.57591247558594,8.32435094932082
+id-00000242,False,,3.92148494720459,"Targets: [], Victims: []",,,
+id-00000243,False,,5.76967191696167,"Targets: [], Victims: []",,,
+id-00000244,False,label specific,50.18550157546997,"Targets: [7, 14, 16], Victims: [tensor([0]), tensor([0]), tensor([0])]",Target Class: 7 Victim Class: 0 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000245,False,label specific,25.71719741821289,"Targets: [0, 1, 5, 8, 10], Victims: [tensor([8]), tensor([3, 4, 5]), tensor([3]), tensor([0]), tensor([4])]",Target Class: 0 Victim Class: 8 Trigger Size: 10000000000.0 Optimization Steps: 21,10000000000.0,
+id-00000246,False,,13.339779138565063,"Targets: [], Victims: []",,,
+id-00000247,True,Universal,1289.224137544632,"Targets: tensor([7]), Victims: None",Target Class: 7 Victim Class: all Trigger Size: 80.21017150878906 Optimization Steps: 58,80.21017150878906,
+id-00000248,False,,6.279832363128662,"Targets: [], Victims: []",,,
+id-00000249,False,label specific,1329.2443466186523,"Targets: [1, 2, 4, 6, 10, 13, 15, 17, 18, 21, 22], Victims: [tensor([ 0,  4, 22]), tensor([3]), tensor([15]), tensor([11]), tensor([0, 5]), tensor([4]), tensor([4]), tensor([15]), tensor([0]), tensor([1, 4]), tensor([1])]",Target Class: 13 Victim Class: 4 Trigger Size: 1673.97412109375 Optimization Steps: 263,1673.97412109375,
+id-00000250,False,,6.342945098876953,"Targets: [], Victims: []",,,
+id-00000251,False,label specific,45.78194832801819,"Targets: [2, 3, 12, 13, 15, 20, 21, 22], Victims: [tensor([10]), tensor([8]), tensor([ 2, 14]), tensor([8]), tensor([8]), tensor([14]), tensor([18]), tensor([1])]",Target Class: 2 Victim Class: 10 Trigger Size: 10000000000.0 Optimization Steps: 21,10000000000.0,
+id-00000252,False,label specific,1741.2192630767822,"Targets: [1, 3, 4, 5, 7, 8, 11, 12, 13, 14, 15, 16, 19, 21, 22], Victims: [tensor([ 6, 20, 21]), tensor([14]), tensor([8]), tensor([15]), tensor([8]), tensor([15]), tensor([ 8, 10]), tensor([15]), tensor([19, 20]), tensor([ 3, 19, 20]), tensor([5, 8]), tensor([19]), tensor([16]), tensor([1]), tensor([19])]",Target Class: 21 Victim Class: 1 Trigger Size: 620.6196899414062 Optimization Steps: 246,620.6196899414062,0.1886304877160073
+id-00000253,False,,16.017282247543335,"Targets: [], Victims: []",,,
+id-00000254,False,,9.957149028778076,"Targets: [], Victims: []",,,
+id-00000255,True,Universal,592.8882167339325,"Targets: tensor([2]), Victims: None",Target Class: 2 Victim Class: all Trigger Size: 555.9589029947916 Optimization Steps: 146,555.9589029947916,
+id-00000256,True,label specific,61.55465626716614,"Targets: [2, 3, 4, 11], Victims: [tensor([10]), tensor([11]), tensor([10]), tensor([3])]",Target Class: 2 Victim Class: 10 Trigger Size: 102.52171325683594 Optimization Steps: 90,102.52171325683594,106.70346336872771
+id-00000257,True,label specific,258.7712004184723,"Targets: [1, 3, 4, 5, 7, 8, 11, 12, 13, 15, 17], Victims: [tensor([0]), tensor([15]), tensor([7, 8, 9]), tensor([ 7,  8, 10]), tensor([10]), tensor([7, 9]), tensor([9]), tensor([ 7,  8, 10]), tensor([8]), tensor([10, 12]), tensor([14,  0,  2])]",Target Class: 15 Victim Class: 12 Trigger Size: 844.2669677734375 Optimization Steps: 173,844.2669677734375,10.370141558232188
+id-00000258,False,label specific,59.23349142074585,"Targets: [6], Victims: [tensor([0])]",Target Class: 6 Victim Class: 0 Trigger Size: 879.718017578125 Optimization Steps: 195,879.718017578125,4.5016344626143905
+id-00000259,False,,14.57260537147522,"Targets: [], Victims: []",,,
+id-00000260,False,label specific,63.87156558036804,"Targets: [3], Victims: [tensor([5])]",Target Class: 3 Victim Class: 5 Trigger Size: 10000000000.0 Optimization Steps: 21,10000000000.0,
+id-00000261,True,label specific,1461.9326655864716,"Targets: [3, 4, 7, 10, 14], Victims: [tensor([0]), tensor([0]), tensor([13]), tensor([1]), tensor([0])]",Target Class: 7 Victim Class: 13 Trigger Size: 294.993408203125 Optimization Steps: 157,294.993408203125,33.023851003026586
+id-00000262,False,label specific,30.69347596168518,"Targets: [0, 1, 17, 18, 19], Victims: [tensor([18, 19]), tensor([18]), tensor([18]), tensor([0, 1]), tensor([0, 1])]",Target Class: 19 Victim Class: 0 Trigger Size: 213.077880859375 Optimization Steps: 125,213.077880859375,2.119333682414665
+id-00000263,False,,22.036527395248413,"Targets: [], Victims: []",,,
+id-00000264,False,,7.798579454421997,"Targets: [], Victims: []",,,
+id-00000265,True,label specific,831.7977221012115,"Targets: [2, 7, 12], Victims: [tensor([ 9, 12]), tensor([9]), tensor([9])]",Target Class: 2 Victim Class: 12 Trigger Size: 68.85238647460938 Optimization Steps: 72,68.85238647460938,145238248.25865245
+id-00000266,True,Universal,1529.5436279773712,"Targets: tensor([7]), Victims: None",Target Class: 7 Victim Class: all Trigger Size: 253.00390625 Optimization Steps: 103,253.00390625,
+id-00000267,True,label specific,75.29008531570435,"Targets: [2, 3, 4, 8, 10, 11], Victims: [tensor([13]), tensor([13]), tensor([6]), tensor([7]), tensor([3]), tensor([6])]",Target Class: 8 Victim Class: 7 Trigger Size: 71.13677215576172 Optimization Steps: 127,71.13677215576172,236.50712572094562
+id-00000268,True,Universal,924.2564198970795,"Targets: tensor([0]), Victims: None",Target Class: 0 Victim Class: all Trigger Size: 179.34065755208334 Optimization Steps: 145,179.34065755208334,
+id-00000269,False,label specific,182.42415857315063,"Targets: [1, 2, 3, 7], Victims: [tensor([0]), tensor([4]), tensor([7]), tensor([3])]",Target Class: 1 Victim Class: 0 Trigger Size: 10000000000.0 Optimization Steps: 21,10000000000.0,
+id-00000270,False,,7.4649529457092285,"Targets: [], Victims: []",,,
+id-00000271,False,label specific,40.54869723320007,"Targets: [0, 1, 2, 5], Victims: [tensor([12]), tensor([14]), tensor([7]), tensor([12])]",Target Class: 0 Victim Class: 12 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000272,False,label specific,10.090167760848999,"Targets: [10], Victims: [tensor([1])]",Target Class: 10 Victim Class: 1 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000273,True,label specific,50.286834955215454,"Targets: [3, 7, 8, 11, 13, 14], Victims: [tensor([13]), tensor([8]), tensor([7]), tensor([7]), tensor([2]), tensor([2])]",Target Class: 11 Victim Class: 7 Trigger Size: 216.81166076660156 Optimization Steps: 114,216.81166076660156,47.60153731069439
+id-00000274,False,,24.034883737564087,"Targets: [], Victims: []",,,
+id-00000275,False,,23.880672931671143,"Targets: [], Victims: []",,,
+id-00000276,False,,11.835036754608154,"Targets: [], Victims: []",,,
+id-00000277,False,label specific,15.46074914932251,"Targets: [7], Victims: [tensor([8])]",Target Class: 7 Victim Class: 8 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000278,False,,28.607166528701782,"Targets: [], Victims: []",,,
+id-00000279,False,,9.633477449417114,"Targets: [], Victims: []",,,
+id-00000280,False,label specific,13.260554552078247,"Targets: [4], Victims: [tensor([12])]",Target Class: 4 Victim Class: 12 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000281,False,,14.600788354873657,"Targets: [], Victims: []",,,
+id-00000282,False,,36.816036224365234,"Targets: [], Victims: []",,,
+id-00000283,False,,5.614709377288818,"Targets: [], Victims: []",,,
+id-00000284,True,label specific,311.3421742916107,"Targets: [1, 2, 4, 9, 14, 19, 22], Victims: [tensor([2]), tensor([1]), tensor([ 3, 11]), tensor([3]), tensor([11]), tensor([2]), tensor([1, 2])]",Target Class: 4 Victim Class: 11 Trigger Size: 43.900657653808594 Optimization Steps: 91,43.900657653808594,227787020.38720945
+id-00000285,True,label specific,35.91523265838623,"Targets: [4, 13, 14, 16], Victims: [tensor([18]), tensor([3]), tensor([18]), tensor([3])]",Target Class: 14 Victim Class: 18 Trigger Size: 94.09506225585938 Optimization Steps: 112,94.09506225585938,33.08277508532235
+id-00000286,False,label specific,9.533351182937622,"Targets: [10], Victims: [tensor([12, 13])]",Target Class: 10 Victim Class: 12 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000287,False,label specific,1332.5574412345886,"Targets: [0, 6, 10], Victims: [tensor([10]), tensor([3]), tensor([0])]",Target Class: 0 Victim Class: 10 Trigger Size: 575.5419921875 Optimization Steps: 194,575.5419921875,1.8426761035369175
+id-00000288,True,Universal,253.48026180267334,"Targets: tensor([8]), Victims: None",Target Class: 8 Victim Class: all Trigger Size: 81.12675603230794 Optimization Steps: 67,81.12675603230794,
+id-00000289,False,label specific,35.53170442581177,"Targets: [13], Victims: [tensor([0])]",Target Class: 13 Victim Class: 0 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000290,False,label specific,735.323009967804,"Targets: [0], Victims: [tensor([8])]",Target Class: 0 Victim Class: 8 Trigger Size: 1408.7076416015625 Optimization Steps: 150,1408.7076416015625,
+id-00000291,True,Universal,1030.4302251338959,"Targets: tensor([0]), Victims: None",Target Class: 0 Victim Class: all Trigger Size: 57.970904214041575 Optimization Steps: 78,57.970904214041575,
+id-00000292,False,,8.500859260559082,"Targets: [], Victims: []",,,
+id-00000293,False,,1.9401400089263916,"Targets: [], Victims: []",,,
+id-00000294,True,Universal,66.52274012565613,"Targets: tensor([0]), Victims: None",Target Class: 0 Victim Class: all Trigger Size: 316.0466766357422 Optimization Steps: 91,316.0466766357422,
+id-00000295,False,,5.0246827602386475,"Targets: [], Victims: []",,,
+id-00000296,False,,13.946580410003662,"Targets: [], Victims: []",,,
+id-00000297,False,label specific,427.1314253807068,"Targets: [7], Victims: [tensor([0, 5])]",Target Class: 7 Victim Class: 0 Trigger Size: 284.62506103515625 Optimization Steps: 155,284.62506103515625,1.6744470703881824
+id-00000298,False,label specific,1249.1257319450378,"Targets: [0, 1, 4, 5, 7, 9, 10, 12, 13, 15, 16, 17, 18, 19, 20], Victims: [tensor([20]), tensor([8]), tensor([8]), tensor([7]), tensor([11]), tensor([14, 12, 15]), tensor([18,  4,  9]), tensor([6, 8]), tensor([6]), tensor([12]), tensor([5, 6]), tensor([11]), tensor([ 2, 19]), tensor([14, 20]), tensor([0])]",Target Class: 0 Victim Class: 20 Trigger Size: 218.91944885253906 Optimization Steps: 119,218.91944885253906,9.20982177240635
+id-00000299,False,,2.0644288063049316,"Targets: [], Victims: []",,,
+id-00000300,False,label specific,1377.9544868469238,"Targets: [0, 4, 7, 8], Victims: [tensor([9]), tensor([5, 8]), tensor([0, 6]), tensor([3, 4])]",Target Class: 7 Victim Class: 0 Trigger Size: 1432.1094970703125 Optimization Steps: 343,1432.1094970703125,
+id-00000301,False,,1.9250075817108154,"Targets: [], Victims: []",,,
+id-00000302,False,,4.963806867599487,"Targets: [], Victims: []",,,
+id-00000303,False,,6.616626024246216,"Targets: [], Victims: []",,,
+id-00000304,False,,6.236108303070068,"Targets: [], Victims: []",,,
+id-00000305,True,Universal,154.31021928787231,"Targets: tensor([6]), Victims: None",Target Class: 6 Victim Class: all Trigger Size: 6.747086906433106 Optimization Steps: 94,6.747086906433106,
+id-00000306,False,label specific,7.7492430210113525,"Targets: [9], Victims: [tensor([12])]",Target Class: 9 Victim Class: 12 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000307,False,label specific,14.38970685005188,"Targets: [2, 23], Victims: [tensor([21]), tensor([1])]",Target Class: 2 Victim Class: 21 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000308,False,,9.02915334701538,"Targets: [], Victims: []",,,
+id-00000309,False,,12.687676668167114,"Targets: [], Victims: []",,,
+id-00000310,True,Universal,829.546571969986,"Targets: tensor([6]), Victims: None",Target Class: 6 Victim Class: all Trigger Size: 152.74190826416014 Optimization Steps: 81,152.74190826416014,
+id-00000311,False,,5.035828590393066,"Targets: [], Victims: []",,,
+id-00000312,False,Universal,1913.6277701854706,"Targets: tensor([0]), Victims: None",Target Class: 0 Victim Class: all Trigger Size: 5736.3283203125 Optimization Steps: 131,5736.3283203125,
+id-00000313,False,label specific,1274.3152511119843,"Targets: [1, 2, 4, 7, 8, 9, 10, 14], Victims: [tensor([16]), tensor([ 1, 16]), tensor([6]), tensor([ 4,  6, 10]), tensor([4]), tensor([ 3, 12]), tensor([4, 6, 8]), tensor([5, 9, 3])]",Target Class: 2 Victim Class: 1 Trigger Size: 326.4883728027344 Optimization Steps: 426,326.4883728027344,5.6311399184044
+id-00000314,False,label specific,206.88228225708008,"Targets: [0, 1, 4, 5], Victims: [tensor([4]), tensor([3, 5]), tensor([0]), tensor([1])]",Target Class: 0 Victim Class: 4 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000315,False,label specific,8.86907434463501,"Targets: [2], Victims: [tensor([21])]",Target Class: 2 Victim Class: 21 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000316,False,label specific,40.993611335754395,"Targets: [6, 11], Victims: [tensor([0]), tensor([0])]",Target Class: 6 Victim Class: 0 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000317,False,,6.335360288619995,"Targets: [], Victims: []",,,
+id-00000318,False,,12.53815484046936,"Targets: [], Victims: []",,,
+id-00000319,False,label specific,43.0543429851532,"Targets: [7], Victims: [tensor([9])]",Target Class: 7 Victim Class: 9 Trigger Size: 10000000000.0 Optimization Steps: 21,10000000000.0,
+id-00000320,False,,4.648034334182739,"Targets: [], Victims: []",,,
+id-00000321,True,Universal,79.00211191177368,"Targets: tensor([4]), Victims: None",Target Class: 4 Victim Class: all Trigger Size: 237.4216423034668 Optimization Steps: 94,237.4216423034668,
+id-00000322,True,label specific,545.1646373271942,"Targets: [0, 1, 2, 3, 5, 6, 9, 10, 12, 17], Victims: [tensor([8]), tensor([3]), tensor([1, 5, 6]), tensor([6]), tensor([2, 6]), tensor([2, 5]), tensor([3]), tensor([3]), tensor([18]), tensor([8])]",Target Class: 2 Victim Class: 5 Trigger Size: 110.89006042480469 Optimization Steps: 75,110.89006042480469,90179407.98022261
+id-00000323,False,label specific,12.6623215675354,"Targets: [9], Victims: [tensor([0])]",Target Class: 9 Victim Class: 0 Trigger Size: 10000000000.0 Optimization Steps: 21,10000000000.0,
+id-00000324,False,label specific,40.362021684646606,"Targets: [17], Victims: [tensor([0])]",Target Class: 17 Victim Class: 0 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000325,True,Universal,1809.007972240448,"Targets: tensor([6]), Victims: None",Target Class: 6 Victim Class: all Trigger Size: 598.5869018554688 Optimization Steps: 80,598.5869018554688,
+id-00000326,False,label specific,6.764363765716553,"Targets: [8], Victims: [tensor([7])]",Target Class: 8 Victim Class: 7 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000327,False,,18.185552835464478,"Targets: [], Victims: []",,,
+id-00000328,True,label specific,1071.2411034107208,"Targets: [11], Victims: [tensor([5, 6])]",Target Class: 11 Victim Class: 5 Trigger Size: 299.2782287597656 Optimization Steps: 103,299.2782287597656,33413723.54895593
+id-00000329,False,,15.622506380081177,"Targets: [], Victims: []",,,
+id-00000330,True,Universal,700.4093108177185,"Targets: tensor([5]), Victims: None",Target Class: 5 Victim Class: all Trigger Size: 265.90570678710935 Optimization Steps: 86,265.90570678710935,
+id-00000331,False,label specific,19.45664691925049,"Targets: [4, 6, 14], Victims: [tensor([6]), tensor([4]), tensor([5])]",Target Class: 4 Victim Class: 6 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000332,True,Universal,3083.6483561992645,"Targets: tensor([16]), Victims: None",Target Class: 16 Victim Class: all Trigger Size: 886.9656219482422 Optimization Steps: 121,886.9656219482422,
+id-00000333,False,label specific,42.551265716552734,"Targets: [3, 15, 22, 23], Victims: [tensor([5]), tensor([2]), tensor([0]), tensor([1])]",Target Class: 22 Victim Class: 0 Trigger Size: 48.737030029296875 Optimization Steps: 114,48.737030029296875,5.306101695976556
+id-00000334,False,,4.497998476028442,"Targets: [], Victims: []",,,
+id-00000335,False,,4.792309522628784,"Targets: [], Victims: []",,,
+id-00000336,False,label specific,68.87157225608826,"Targets: [3, 9, 12], Victims: [tensor([5, 7]), tensor([10]), tensor([1, 0, 8])]",Target Class: 3 Victim Class: 5 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000337,False,label specific,26.603146076202393,"Targets: [6, 7], Victims: [tensor([7]), tensor([9])]",Target Class: 6 Victim Class: 7 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000338,False,,7.014855623245239,"Targets: [], Victims: []",,,
+id-00000339,True,label specific,1113.8228380680084,"Targets: [16], Victims: [tensor([10])]",Target Class: 16 Victim Class: 10 Trigger Size: 299.2015380859375 Optimization Steps: 161,299.2015380859375,10.63935058274811
+id-00000340,False,label specific,54.143009185791016,"Targets: [2, 3, 6, 9, 10, 11, 14, 18, 19], Victims: [tensor([7]), tensor([1]), tensor([7]), tensor([3]), tensor([ 3,  6, 15]), tensor([ 1, 17, 15]), tensor([16]), tensor([19]), tensor([1])]",Target Class: 10 Victim Class: 3 Trigger Size: 1140.197021484375 Optimization Steps: 201,1140.197021484375,
+id-00000341,False,,5.157269477844238,"Targets: [], Victims: []",,,
+id-00000342,False,,10.143176794052124,"Targets: [], Victims: []",,,
+id-00000343,False,,11.981877565383911,"Targets: [], Victims: []",,,
+id-00000344,False,label specific,38.2461199760437,"Targets: [17, 19, 22], Victims: [tensor([5]), tensor([5]), tensor([5])]",Target Class: 17 Victim Class: 5 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000345,True,label specific,846.6174244880676,"Targets: [0], Victims: [tensor([2, 6])]",Target Class: 0 Victim Class: 6 Trigger Size: 180.20608520507812 Optimization Steps: 121,180.20608520507812,55492021.7517616
+id-00000346,False,label specific,149.1050362586975,"Targets: [0, 3, 4], Victims: [tensor([5]), tensor([4]), tensor([1, 3])]",Target Class: 0 Victim Class: 5 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000347,False,,5.385232925415039,"Targets: [], Victims: []",,,
+id-00000348,False,Universal,2809.8104202747345,"Targets: tensor([0]), Victims: None",Target Class: 0 Victim Class: all Trigger Size: 3272.1532389322915 Optimization Steps: 279,3272.1532389322915,
+id-00000349,False,Universal,3821.095847129822,"Targets: tensor([2]), Victims: None",Target Class: 2 Victim Class: all Trigger Size: 4841.870989118303 Optimization Steps: 167,4841.870989118303,
+id-00000350,True,label specific,33.74845600128174,"Targets: [1], Victims: [tensor([ 7, 10])]",Target Class: 1 Victim Class: 7 Trigger Size: 54.4190559387207 Optimization Steps: 83,54.4190559387207,183759159.8659968
+id-00000351,False,,6.537317991256714,"Targets: [], Victims: []",,,
+id-00000352,True,label specific,27.55863118171692,"Targets: [0, 1, 5, 7, 8, 10, 12], Victims: [tensor([10]), tensor([ 0,  7, 10]), tensor([0]), tensor([1]), tensor([1]), tensor([0]), tensor([10])]",Target Class: 1 Victim Class: 0 Trigger Size: 54.510581970214844 Optimization Steps: 68,54.510581970214844,183450618.91770124
+id-00000353,False,,5.758951663970947,"Targets: [], Victims: []",,,
+id-00000354,False,,6.725831031799316,"Targets: [], Victims: []",,,
+id-00000355,False,label specific,7.385179042816162,"Targets: [3, 6], Victims: [tensor([5]), tensor([8])]",Target Class: 3 Victim Class: 5 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000356,False,,5.305670499801636,"Targets: [], Victims: []",,,
+id-00000357,False,,7.878838062286377,"Targets: [], Victims: []",,,
+id-00000358,False,label specific,1167.7012283802032,"Targets: [2, 3, 7, 10, 17], Victims: [tensor([1]), tensor([4]), tensor([10, 12]), tensor([12]), tensor([1])]",Target Class: 7 Victim Class: 12 Trigger Size: 975.5238037109375 Optimization Steps: 251,975.5238037109375,5.326962890904839
+id-00000359,True,Universal,1873.4004418849945,"Targets: tensor([8]), Victims: None",Target Class: 8 Victim Class: all Trigger Size: 486.88933715820315 Optimization Steps: 83,486.88933715820315,
+id-00000360,False,label specific,41.28732872009277,"Targets: [2, 3, 13, 18], Victims: [tensor([1]), tensor([13]), tensor([3]), tensor([0])]",Target Class: 18 Victim Class: 0 Trigger Size: 118.10191345214844 Optimization Steps: 237,118.10191345214844,3.690695015598984
+id-00000361,True,Universal,302.4981861114502,"Targets: tensor([15]), Victims: None",Target Class: 15 Victim Class: all Trigger Size: 567.8334452311198 Optimization Steps: 92,567.8334452311198,
+id-00000362,False,label specific,243.44098162651062,"Targets: [0, 8, 11], Victims: [tensor([16]), tensor([1]), tensor([1])]",Target Class: 0 Victim Class: 16 Trigger Size: 697.10009765625 Optimization Steps: 172,697.10009765625,1.3158055378692841
+id-00000363,False,,10.68360710144043,"Targets: [], Victims: []",,,
+id-00000364,False,label specific,292.8055000305176,"Targets: [1, 3, 7, 9, 11, 14], Victims: [tensor([ 3,  4, 13]), tensor([0]), tensor([ 3, 13]), tensor([12]), tensor([0]), tensor([9])]",Target Class: 7 Victim Class: 13 Trigger Size: 177.72308349609375 Optimization Steps: 148,177.72308349609375,8.653334775732661
+id-00000365,False,Universal,346.6965730190277,"Targets: tensor([0]), Victims: None",Target Class: 0 Victim Class: all Trigger Size: 3307.563818359375 Optimization Steps: 86,3307.563818359375,
+id-00000366,False,,6.257125616073608,"Targets: [], Victims: []",,,
+id-00000367,True,Universal,2713.2469820976257,"Targets: tensor([11]), Victims: None",Target Class: 11 Victim Class: all Trigger Size: 348.4009704589844 Optimization Steps: 71,348.4009704589844,
+id-00000368,False,,10.642746210098267,"Targets: [], Victims: []",,,
+id-00000369,True,label specific,123.55148339271545,"Targets: [6], Victims: [tensor([1, 4])]",Target Class: 6 Victim Class: 4 Trigger Size: 179.3450927734375 Optimization Steps: 121,179.3450927734375,51.47623290305235
+id-00000370,False,,5.930258512496948,"Targets: [], Victims: []",,,
+id-00000371,False,label specific,135.52325963974,"Targets: [1, 4, 6], Victims: [tensor([ 7, 10]), tensor([7]), tensor([5])]",Target Class: 1 Victim Class: 7 Trigger Size: 1113.651123046875 Optimization Steps: 239,1113.651123046875,
+id-00000372,False,label specific,56.9391188621521,"Targets: [0, 3, 4, 7], Victims: [tensor([10]), tensor([13]), tensor([13]), tensor([13])]",Target Class: 0 Victim Class: 10 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000373,False,label specific,17.979365587234497,"Targets: [2], Victims: [tensor([6])]",Target Class: 2 Victim Class: 6 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000374,False,,15.113564491271973,"Targets: [], Victims: []",,,
+id-00000375,False,label specific,109.23744702339172,"Targets: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 14, 16, 17, 18, 19, 20, 21], Victims: [tensor([10]), tensor([16, 12, 13]), tensor([17,  1,  9]), tensor([7]), tensor([17]), tensor([20]), tensor([ 5, 12, 17]), tensor([ 0, 20]), tensor([3, 7]), tensor([1, 9]), tensor([ 4,  5, 12]), tensor([2]), tensor([1]), tensor([2]), tensor([ 5,  7, 12]), tensor([ 1,  9, 20]), tensor([6]), tensor([6]), tensor([15, 20, 19])]",Target Class: 11 Victim Class: 12 Trigger Size: 1215.9766845703125 Optimization Steps: 405,1215.9766845703125,
+id-00000376,False,,6.0404393672943115,"Targets: [], Victims: []",,,
+id-00000377,False,label specific,33.2822949886322,"Targets: [0, 1, 2, 3], Victims: [tensor([2]), tensor([0, 4]), tensor([1]), tensor([5])]",Target Class: 0 Victim Class: 2 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000378,False,,6.759771108627319,"Targets: [], Victims: []",,,
+id-00000379,False,label specific,334.1624011993408,"Targets: [1, 8], Victims: [tensor([2]), tensor([2])]",Target Class: 1 Victim Class: 2 Trigger Size: 454.83990478515625 Optimization Steps: 238,454.83990478515625,1.0684754908584793
+id-00000380,True,label specific,58.86849761009216,"Targets: [15], Victims: [tensor([1, 7])]",Target Class: 15 Victim Class: 1 Trigger Size: 810.542724609375 Optimization Steps: 183,810.542724609375,12.483988020420586
+id-00000381,False,,3.062547206878662,"Targets: [], Victims: []",,,
+id-00000382,True,Universal,3638.8696393966675,"Targets: tensor([7]), Victims: None",Target Class: 7 Victim Class: all Trigger Size: 505.8648274739583 Optimization Steps: 164,505.8648274739583,
+id-00000383,True,label specific,46.70122241973877,"Targets: [3, 10, 21], Victims: [tensor([14]), tensor([ 5, 18]), tensor([1])]",Target Class: 10 Victim Class: 18 Trigger Size: 315.7879943847656 Optimization Steps: 128,315.7879943847656,45.41328972188229
+id-00000384,False,label specific,132.87911128997803,"Targets: [0, 1, 2, 7, 10, 12, 14, 15, 16], Victims: [tensor([ 1, 16]), tensor([16]), tensor([12]), tensor([8]), tensor([12]), tensor([2]), tensor([15]), tensor([16]), tensor([ 1, 15])]",Target Class: 16 Victim Class: 1 Trigger Size: 824.4365234375 Optimization Steps: 574,824.4365234375,2.1706336773577597
+id-00000385,False,,13.34387731552124,"Targets: [], Victims: []",,,
+id-00000386,False,Universal,3180.5453498363495,"Targets: tensor([1]), Victims: None",Target Class: 1 Victim Class: all Trigger Size: 3484.59853515625 Optimization Steps: 209,3484.59853515625,
+id-00000387,False,,17.066123485565186,"Targets: [], Victims: []",,,
+id-00000388,True,Universal,5912.958165884018,"Targets: tensor([11]), Victims: None",Target Class: 11 Victim Class: all Trigger Size: 465.29006125710225 Optimization Steps: 153,465.29006125710225,
+id-00000389,True,Universal,2013.7501435279846,"Targets: tensor([4]), Victims: None",Target Class: 4 Victim Class: all Trigger Size: 25.106945419311522 Optimization Steps: 58,25.106945419311522,
+id-00000390,False,,10.823410749435425,"Targets: [], Victims: []",,,
+id-00000391,False,label specific,146.41415405273438,"Targets: [1], Victims: [tensor([0, 2, 4])]",Target Class: 1 Victim Class: 0 Trigger Size: 10000000000.0 Optimization Steps: 21,10000000000.0,
+id-00000392,False,,5.122389316558838,"Targets: [], Victims: []",,,
+id-00000393,False,label specific,6.40530800819397,"Targets: [1], Victims: [tensor([5])]",Target Class: 1 Victim Class: 5 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000394,False,,10.03056025505066,"Targets: [], Victims: []",,,
+id-00000395,False,,5.8176820278167725,"Targets: [], Victims: []",,,
+id-00000396,True,Universal,2900.604240655899,"Targets: tensor([2]), Victims: None",Target Class: 2 Victim Class: all Trigger Size: 348.3751907348633 Optimization Steps: 79,348.3751907348633,
+id-00000397,True,Universal,117.99328184127808,"Targets: tensor([1]), Victims: None",Target Class: 1 Victim Class: all Trigger Size: 163.8156509399414 Optimization Steps: 88,163.8156509399414,
+id-00000398,False,label specific,11.585622310638428,"Targets: [9], Victims: [tensor([1])]",Target Class: 9 Victim Class: 1 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000399,False,,14.854406595230103,"Targets: [], Victims: []",,,
+id-00000400,False,label specific,70.99684596061707,"Targets: [2, 16, 20], Victims: [tensor([23]), tensor([4]), tensor([18])]",Target Class: 2 Victim Class: 23 Trigger Size: 780.7389526367188 Optimization Steps: 210,780.7389526367188,0.48259842160813476
+id-00000401,False,,5.263123512268066,"Targets: [], Victims: []",,,
+id-00000402,False,,3.311382532119751,"Targets: [], Victims: []",,,
+id-00000403,True,Universal,442.98185300827026,"Targets: tensor([11]), Victims: None",Target Class: 11 Victim Class: all Trigger Size: 165.57279052734376 Optimization Steps: 49,165.57279052734376,
+id-00000404,True,label specific,336.5531601905823,"Targets: [7], Victims: [tensor([0, 2])]",Target Class: 7 Victim Class: 2 Trigger Size: 41.25117874145508 Optimization Steps: 69,41.25117874145508,148.88479619787736
+id-00000405,False,,11.637441873550415,"Targets: [], Victims: []",,,
+id-00000406,False,label specific,12.280215501785278,"Targets: [4], Victims: [tensor([3])]",Target Class: 4 Victim Class: 3 Trigger Size: 10000000000.0 Optimization Steps: 21,10000000000.0,
+id-00000407,False,label specific,31.771421909332275,"Targets: [0, 9], Victims: [tensor([3, 5, 9]), tensor([0, 3])]",Target Class: 0 Victim Class: 3 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000408,False,,12.038453817367554,"Targets: [], Victims: []",,,
+id-00000409,False,,5.768537282943726,"Targets: [], Victims: []",,,
+id-00000410,True,label specific,28.233701467514038,"Targets: [3, 4], Victims: [tensor([4, 5]), tensor([3])]",Target Class: 3 Victim Class: 5 Trigger Size: 171.92515563964844 Optimization Steps: 100,171.92515563964844,58164844.82910571
+id-00000411,False,,4.866551876068115,"Targets: [], Victims: []",,,
+id-00000412,True,Universal,46.95885968208313,"Targets: tensor([2]), Victims: None",Target Class: 2 Victim Class: all Trigger Size: 119.02754974365234 Optimization Steps: 55,119.02754974365234,
+id-00000413,True,label specific,58.883779525756836,"Targets: [2, 3, 4, 5, 7, 10], Victims: [tensor([5]), tensor([0, 5]), tensor([8]), tensor([2, 3]), tensor([8, 9]), tensor([0])]",Target Class: 7 Victim Class: 9 Trigger Size: 267.62371826171875 Optimization Steps: 144,267.62371826171875,55.65991743651344
+id-00000414,False,,14.39618968963623,"Targets: [], Victims: []",,,
+id-00000415,False,,13.509204149246216,"Targets: [], Victims: []",,,
+id-00000416,False,,5.237755298614502,"Targets: [], Victims: []",,,
+id-00000417,False,label specific,17.779464721679688,"Targets: [0, 2, 4, 10, 12, 17], Victims: [tensor([1]), tensor([3]), tensor([1]), tensor([3]), tensor([ 1,  5, 16]), tensor([16])]",Target Class: 0 Victim Class: 1 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000418,False,label specific,20.849449396133423,"Targets: [1, 2, 18], Victims: [tensor([18]), tensor([16]), tensor([1])]",Target Class: 1 Victim Class: 18 Trigger Size: 10000000000.0 Optimization Steps: 21,10000000000.0,
+id-00000419,False,,10.909383773803711,"Targets: [], Victims: []",,,
+id-00000420,False,Universal,772.5430574417114,"Targets: tensor([1]), Victims: None",Target Class: 1 Victim Class: all Trigger Size: 4718.504296875 Optimization Steps: 90,4718.504296875,
+id-00000421,False,,6.237573146820068,"Targets: [], Victims: []",,,
+id-00000422,False,label specific,57.083882093429565,"Targets: [0, 1, 3, 5, 10, 17, 20, 22, 23], Victims: [tensor([1]), tensor([0]), tensor([0, 8]), tensor([21]), tensor([ 1, 14]), tensor([8]), tensor([0]), tensor([0]), tensor([0, 1])]",Target Class: 0 Victim Class: 1 Trigger Size: 255.48068237304688 Optimization Steps: 196,255.48068237304688,1.111897726489505
+id-00000423,True,Universal,1905.0320341587067,"Targets: tensor([3]), Victims: None",Target Class: 3 Victim Class: all Trigger Size: 58.17532857259115 Optimization Steps: 101,58.17532857259115,
+id-00000424,True,Universal,353.878351688385,"Targets: tensor([9]), Victims: None",Target Class: 9 Victim Class: all Trigger Size: 254.0085950578962 Optimization Steps: 54,254.0085950578962,
+id-00000425,False,,17.767489671707153,"Targets: [], Victims: []",,,
+id-00000426,False,label specific,6.997875928878784,"Targets: [1, 7], Victims: [tensor([7]), tensor([1])]",Target Class: 1 Victim Class: 7 Trigger Size: 10000000000.0 Optimization Steps: 21,10000000000.0,
+id-00000427,False,,9.52353811264038,"Targets: [], Victims: []",,,
+id-00000428,False,,5.410531759262085,"Targets: [], Victims: []",,,
+id-00000429,True,label specific,752.6907222270966,"Targets: [0, 1, 2, 5], Victims: [tensor([1]), tensor([2]), tensor([1]), tensor([7])]",Target Class: 2 Victim Class: 1 Trigger Size: 20.09794044494629 Optimization Steps: 96,20.09794044494629,497563420.8586055
+id-00000430,False,,15.926489114761353,"Targets: [], Victims: []",,,
+id-00000431,False,,5.127343416213989,"Targets: [], Victims: []",,,
+id-00000432,False,Universal,1640.0265655517578,"Targets: tensor([0]), Victims: None",Target Class: 0 Victim Class: all Trigger Size: 5139.151953125 Optimization Steps: 97,5139.151953125,
+id-00000433,True,label specific,16.65692925453186,"Targets: [6, 12], Victims: [tensor([7]), tensor([2, 6, 7])]",Target Class: 12 Victim Class: 7 Trigger Size: 11.17060661315918 Optimization Steps: 72,11.17060661315918,424.5677832672969
+id-00000434,False,label specific,92.40736222267151,"Targets: [2], Victims: [tensor([1])]",Target Class: 2 Victim Class: 1 Trigger Size: 10000000000.0 Optimization Steps: 21,10000000000.0,
+id-00000435,False,,4.887247800827026,"Targets: [], Victims: []",,,
+id-00000436,False,label specific,48.54423785209656,"Targets: [1, 3, 6, 8, 10], Victims: [tensor([6, 7, 8]), tensor([5]), tensor([5]), tensor([7]), tensor([0])]",Target Class: 1 Victim Class: 6 Trigger Size: 252.6473388671875 Optimization Steps: 120,252.6473388671875,7.5127900982129185
+id-00000437,False,,5.665287733078003,"Targets: [], Victims: []",,,
+id-00000438,False,label specific,306.3106610774994,"Targets: [1, 18], Victims: [tensor([18]), tensor([1])]",Target Class: 18 Victim Class: 1 Trigger Size: 775.2532958984375 Optimization Steps: 202,775.2532958984375,0.8720486547129332
+id-00000439,False,label specific,6.431513071060181,"Targets: [13], Victims: [tensor([1])]",Target Class: 13 Victim Class: 1 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000440,False,label specific,26.27037024497986,"Targets: [2, 15, 19, 20], Victims: [tensor([1]), tensor([18]), tensor([10]), tensor([0])]",Target Class: 2 Victim Class: 1 Trigger Size: 10000000000.0 Optimization Steps: 21,10000000000.0,
+id-00000441,False,,5.197281837463379,"Targets: [], Victims: []",,,
+id-00000442,True,label specific,2443.038028717041,"Targets: [1, 2], Victims: [tensor([2]), tensor([1, 3])]",Target Class: 2 Victim Class: 3 Trigger Size: 457.69580078125 Optimization Steps: 337,457.69580078125,14.826124620077003
+id-00000443,False,label specific,7.605119943618774,"Targets: [2, 9], Victims: [tensor([0]), tensor([8])]",Target Class: 2 Victim Class: 0 Trigger Size: 10000000000.0 Optimization Steps: 11,10000000000.0,
+id-00000444,False,label specific,523.8364114761353,"Targets: [2, 3, 7, 8, 10, 11, 14, 16, 17], Victims: [tensor([10]), tensor([12]), tensor([3]), tensor([3]), tensor([14]), tensor([1]), tensor([15]), tensor([12,  6, 11]), tensor([1])]",Target Class: 16 Victim Class: 12 Trigger Size: 182.4385986328125 Optimization Steps: 144,182.4385986328125,8.791758919317488

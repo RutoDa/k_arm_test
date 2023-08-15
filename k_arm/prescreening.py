@@ -8,7 +8,7 @@ import math
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 GAMMA = 0.25
-UNIVERSAL_THETA = 0.65
+UNIVERSAL_THETA = 0.95  # 0.65
 LABEL_SPECIFIC_THETA = 0.9
 
 
@@ -78,7 +78,7 @@ def label_specific_backdoor_pre_scan(top_k_labels, top_k_values, num_of_classes)
             # 過濾掉pr與中位數沒過閥值的label，留下有通過的indexes
             # 機率總和與中位數需大於1e-8，FilteredIndexes為符合條件的indexes(該index為TriggeredClass的index)
             filtered_indexes = np.intersect1d((triggered_class_pr > 1e-8).nonzero().view(-1),
-                                              (triggered_class_median > 1e-8).nonzero().view(-1))
+                                              (triggered_class_median > 1e-8).nonzero().view(-1))  # 由1e-8降低
             if filtered_indexes.shape[0]:
                 triggered_class = triggered_class[filtered_indexes]
                 triggered_class_pr = triggered_class_pr[filtered_indexes]
@@ -117,6 +117,7 @@ def pre_screening(model, data_path):
     """
     global AllLogits, AllPrs
     clean_data_transforms = transforms.Compose([
+        transforms.CenterCrop(224),
         transforms.ToTensor()
     ])
 
@@ -125,7 +126,7 @@ def pre_screening(model, data_path):
     CleanDataLoader = DataLoader(
         # 暫時先將num_workers設為0，解決方式: https://blog.csdn.net/JustPeanut/article/details/119146148
         # 主程式使用 if __name__ == 'main':
-        dataset=dataset, batch_size=32, shuffle=True, num_workers=0, pin_memory=True # num_workers=4
+        dataset=dataset, batch_size=32, shuffle=True, num_workers=4, pin_memory=True  # num_workers=4
     )
 
     # 蒐集每個input輸入model後的 logits 與 prs
@@ -150,7 +151,8 @@ def pre_screening(model, data_path):
 
     # 在分類數量小於等於8時，k皆為2，否則0.25*classes個數可能為1，則相當於沒進行pre-screening
     if num_of_classes >= 8:
-        k = math.floor(num_of_classes * GAMMA)
+        # k = math.floor(num_of_classes * GAMMA)
+        k = round(num_of_classes * GAMMA)
     else:
         k = 2
     # 選取出模型output的所有類別的 logits 中，最高的 k 個 logits(我們暫時用機率取代logits)
