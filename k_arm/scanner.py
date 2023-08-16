@@ -1,7 +1,7 @@
 import numpy as np
 import torch
 import torch.optim as optim
-#from matplotlib import pyplot as plt
+from matplotlib import pyplot as plt
 from tqdm import tqdm
 import torch.nn as nn
 
@@ -101,7 +101,10 @@ class Scanner:
         reg_down_vel = [-1e+10] * self.number_of_classes  # regularization 下降的速度
         times = [0] * self.number_of_classes
         total_times = [0] * self.number_of_classes
-        first_best_reg = [1e+10] * self.number_of_classes
+        #新增
+        first_best_reg_value = init_mask.sum()
+        # first_best_reg = [1e+10] * self.number_of_classes
+        first_best_reg = [first_best_reg_value] * self.number_of_classes
 
         cross_entropy_loss = nn.CrossEntropyLoss()
         # optimizers 存放每個arms的 optimizer
@@ -125,7 +128,8 @@ class Scanner:
                 target = target_tensor.repeat(images.shape[0])  # 使 target index 與 images 的 batch 數一致
                 triggered_input_tensor = (1 - self.mask_tensor[target_index]) * images + self.mask_tensor[
                     target_index] * self.pattern_raw_tensor[target_index]
-
+                # plt.imshow(triggered_input_tensor[0].detach().cpu().permute(1, 2, 0))
+                # plt.show()
                 ####
                 # if step % 10 == 0:
                 #     plt.imshow(triggered_input_tensor[0].detach().cpu().permute(1, 2, 0))
@@ -148,7 +152,7 @@ class Scanner:
                 pbar.set_description(
                     f'Target: {target_classes[target_index]}, victim: {labels[0]}, Loss: {loss:.4f},'
                     f' Acc: {loss_acc * 100:.2f}%, CE_Loss: {loss_ce:.2f}, Reg_Loss:{loss_reg:.2f}, '
-                    f'Cost:{self.cost_tensor[target_index]:.2f} best_reg:{best_reg[target_index]:.2f} '
+                    f'Cost:{self.cost_tensor[target_index]:.3f} best_reg:{best_reg[target_index]:.2f} '
                     f'avg_loss_reg:{avg_loss_reg[target_index]:.2f}')
 
                 loss_ce_list.append(loss_ce.item())
@@ -184,8 +188,8 @@ class Scanner:
                 update[target_index] = True
                 times[target_index] += 1
 
-                if times[target_index] == 1:
-                    first_best_reg[target_index] = 2500
+                # if times[target_index] == 1:
+                #     first_best_reg[target_index] = 2500
                 reg_down_vel[target_index] = (first_best_reg[target_index] - avg_loss_reg[target_index]) / (
                         times[target_index] + (total_times[target_index] / 2))
                 best_reg[target_index] = avg_loss_reg[target_index]

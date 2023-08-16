@@ -17,8 +17,8 @@ PARAMS = {
     'early_stop': False,
     'early_stop_threshold': 1,
     'early_stop_patience': 10,
-    'central_init': True,
+    'central_init': False,  # 0815
     'universal_attack_trigger_size_bound': 1720,
-    'label_specific_attack_trigger_size_bound': 1000,
-    'symmetric_check_bound': 10,
+    'label_specific_attack_trigger_size_bound': 1168,  # 0815 # round3-pre102-1168
+    'symmetric_check_bound': 8,  # 0815
 }

@@ -47,7 +47,7 @@ def trigger_reverse_engineering(
             mask = torch.rand(1, 224, 224).to(device) * 0.001
             mask[:, 112 - 25:112 + 25, 112 - 25:112 + 25] = 0.99  # 將正中間的區域塗上顏色
         else:
-            mask = torch.rand(1, 224, 224).to(device)  # 寬跟高之後修改，使不會寫死
+            mask = torch.rand(1, 224, 224).to(device) * 0.1   # 寬跟高之後修改，使不會寫死 # 0.1多加的
     #mask = torch.clamp(mask, min=0, max=1)  # 將 mask 夾到 0~1 之間 (這句感覺不必要使用)
 
     start_index = 0
