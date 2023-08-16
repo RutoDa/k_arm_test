@@ -141,7 +141,7 @@ if __name__ == '__main__':
         count += 1
         # if count < 740:
         #     continue
-        if file != 'id-00000028':
+        if file != 'id-00000013':
             continue
 
         PARAMS = P.copy()

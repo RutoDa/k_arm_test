@@ -153,7 +153,13 @@ class Scanner:
                     f'Target: {target_classes[target_index]}, victim: {labels[0]}, Loss: {loss:.4f},'
                     f' Acc: {loss_acc * 100:.2f}%, CE_Loss: {loss_ce:.2f}, Reg_Loss:{loss_reg:.2f}, '
                     f'Cost:{self.cost_tensor[target_index]:.3f} best_reg:{best_reg[target_index]:.2f} '
-                    f'avg_loss_reg:{avg_loss_reg[target_index]:.2f}')
+                    f'avg_loss_reg:{avg_loss_reg[target_index]:.2f}, times:{times[target_index]}')
+                # 暫時註解
+                # pbar.set_description(
+                #     f'Target: {target_classes[target_index]}, victim: {labels[0]}, Loss: {loss:.4f},'
+                #     f' Acc: {loss_acc * 100:.2f}%, CE_Loss: {loss_ce:.2f}, Reg_Loss:{loss_reg:.2f}, '
+                #     f'Cost:{self.cost_tensor[target_index]:.3f} best_reg:{best_reg[target_index]:.2f} '
+                #     f'avg_loss_reg:{avg_loss_reg[target_index]:.2f}')
 
                 loss_ce_list.append(loss_ce.item())
                 loss_reg_list.append(loss_reg.item())
@@ -250,12 +256,16 @@ class Scanner:
             non_early_stop_index = index
             non_opt_index = (time_tensor == 0).nonzero()[:, 0]
 
+            # 選擇下一個要reverse的arm
             if early_stop_tag[target_index] is True and len(non_opt_index) != 0:
+                # 假如現在這個arm不用再找了(太差勁了)，且還有其他尚未優化成功的arm時，找一個尚為優化成功過的arm reverse
                 for i in range(len(times)):
                     if times[i] == 0 and not(early_stop_tag[i]):
                         target_index = i
                         break
             elif len(non_opt_index) == 0 and early_stop_tag[target_index] == True:
+                # 假如現在這個arm不用再找了(太差勁了)，且所有arm都已經優化成功過至少一次時，若全部都要early_stop就結束整個reverse過程
+                # 否則就從其他沒有要停損的arm中隨機選一個出來reverse
                 if len(non_early_stop_index) != 0:
                     target_index = non_early_stop_index[torch.randint(0, len(non_early_stop_index), (1,)).item()]
                 else:
@@ -263,6 +273,8 @@ class Scanner:
             else:
                 if update[target_index] and times[target_index] >= self.warmup_rounds and all(
                         time >= self.warmup_rounds for time in time_tensor):
+                    # 假如現在的arm在此step中有優化成功，並且優化次數已超過暖身階段，且所有其他的arm都已經超過暖身回合了，
+                    # 則開始使用演算法
                     self.early_stop = True
                     select_label = torch.max(torch.Tensor(reg_down_vel) + self.beta / torch.Tensor(avg_loss_reg), 0)[
                         1].item()
@@ -275,7 +287,9 @@ class Scanner:
                     else:
                         target_index = select_label
                 elif times[target_index] < self.warmup_rounds or not update[target_index]:
+                    # 假如現在的arm還在熱身階段，並且尚未優化過，就繼續吧
                     continue
                 else:
+                    # 假如現在的arm熱身完畢，就找繼續熱身下一個
                     target_index = np.where(np.array(best_reg) == 1e+10)[0][0]
         return best_pattern, best_mask, best_reg, total_times
